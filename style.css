@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-image: url("images/Board.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* PAPER SECTION */
+.cv-paper {            /* parent gets the height from the image */
+  position: relative;
+  padding-block: 2rem; /* optional breathing room */
+}
+
+.cv-paper__bg {        /* the paper itself – responsive */
+  display: block;
+  width: min(100%, 960px);  /* max width, shrinks on small screens */
+  height: auto;
+  margin-inline: auto;
+  margin-top: -35px;
+}
+
+.cv-paper__content {   /* put elements ON the paper */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, 960px);  /* matches the paper width */
+  height: 100%;             /* same height as the paper image */
+  box-sizing: border-box;
+  z-index: 1;               /* above the paper image */
+}
+.cv-paper__logo{
+position: absolute;
+    width: 50%;
+    top: 2%;
+    left: 25%;
+}
+.cv-paper__coffee{
+    position: absolute;
+    width: 50%;
+    top: -4%;
+    left: -8%;
+}
+
