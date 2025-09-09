@@ -1,3 +1,8 @@
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
   background-image: url("images/Board.png"); 
@@ -13,9 +18,8 @@ body {
 
 .cv-paper__bg {        /* the paper itself – responsive */
   display: block;
-  width: min(100%, 960px);  /* max width, shrinks on small screens */
+  width: min(100%, 100%);  /* max width, shrinks on small screens */
   height: auto;
-  margin-inline: auto;
   margin-top: -35px;
 }
 
@@ -24,21 +28,107 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: min(100%, 960px);  /* matches the paper width */
+  width: min(100%, 1920px);  /* matches the paper width */
   height: 100%;             /* same height as the paper image */
   box-sizing: border-box;
   z-index: 1;               /* above the paper image */
+  overflow: hidden;
 }
 .cv-paper__logo{
 position: absolute;
-    width: 50%;
+  width: min(35%, 50%);
     top: 2%;
-    left: 25%;
+    left: 33%;
 }
 .cv-paper__coffee{
     position: absolute;
     width: 50%;
-    top: -4%;
-    left: -8%;
+    top: -3%;
+    left: -10%;
+}
+.cv-paper__sparepaper{
+    position: absolute;
+    width: 50%;
+    top: 0%;
+    right: -15%;
+    
+}
+.cv-paper__pen{
+    position: absolute;
+    width: 30%;
+    top: 3%;
+    left: 70%;
+}
+.cv-paper__stamp{
+    position: absolute;
+    width: 21%;
+    top: 4%;
+    left: 0%;
+    transform: rotate(-12deg);
+}
+.cv-paper__name{
+position: absolute;
+    color: #131596;
+    font-family: "Special Elite";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100px;
+    transform: rotate(-15.315deg);
+    top: 1%;
+    left: 15%;
+}
+
+.cv-paper__resume{
+  position: absolute;
+  top: 6.5%;       /* halfway down the parent */
+  left: 50%;      /* halfway across the parent */
+  transform: translate(-50%, -50%); /* pull back by half its own size */
+  
+  color: #131596;
+  font-family: "Special Elite", cursive;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/* fine-tune placement around laptop widths */
+@media (max-width: 1200px) {
+  .cv-paper__sparepaper {
+    right: -10px;  /* scoot it a bit off the edge */
+    top: 5px;      /* nudge it down */
+  }
+}
+
+@media (min-width: 450px) {
+    .cv-paper__name{
+    top: 0.5%;
+    left: 26%;
+    font-size: 20px;
+    width: 200px;
+  }
+}
+@media (min-width: 1000px) {
+    .cv-paper__name{
+    top: 1%;
+    left: 26%;
+    font-size: 28px;
+    width: 200px;
+  }
+}
+/* fine-tune placement around wide desktop */
+@media (min-width: 1600px) {
+  .cv-paper__sparepaper {
+    right: -15%;
+    top: 0%;
+  }
+    .cv-paper__name{
+    top: 1%;
+    left: 26%;
+    font-size: 32px;
+    width: 300px;
+  }
 }
 
