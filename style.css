@@ -393,6 +393,11 @@ left: 7%;
     left: 50%;
     top: 8%;
 }
+.cv-resume__splash{
+    top: 1%;
+    left: 18%;
+    
+}
 }
 
 /* ------------------------------------MEDIA QUERY 1600px------------------------------------ */
@@ -414,8 +419,8 @@ left: 7%;
     font-weight: 400;
     font-style: normal;
     font-size: 42px;
-    top: -0.5%;
-    left: 16%;
+    top: -5%;
+    left: 11%;
     transform: rotate(-15.315deg);
     color: #131596;
 }
@@ -427,7 +432,7 @@ left: 7%;
 
 .cv-resume__intro{
     font-family: "Shadows Into Light", cursive;
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 400;
     line-height: normal;
     width: 600px;
@@ -442,14 +447,14 @@ left: 7%;
 }
 .cv-resume__email{
     font-family: "Special Elite", cursive;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 400;
     line-height: normal;
     width: 400px;
 }
 
 .cv-paper__resume{
-    font-size: 42px;
+    font-size: 32px;
 }
 .cv-paper__name{
     font-size: 42px;
