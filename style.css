@@ -3,6 +3,12 @@
   font-weight: 400;
   font-style: normal;
 }
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background-image: url("images/Board.png"); 
@@ -93,6 +99,61 @@ position: absolute;
   line-height: normal;
 }
 
+.cv-resume{
+    position: relative;
+    top: 8%;
+    left: 11%;
+}
+.cv-resume__h1{
+    font-family: "Special Elite", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    width: 200px;
+}
+
+.cv-resume__email{
+    font-family: "Special Elite", cursive;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cv-resume__splash{
+    position: absolute;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    top: -0.5%;
+    left: 33%;
+    transform: rotate(-15.315deg);
+    color: #131596;
+}
+
+.cv-resume__intro{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    width: 200px;
+        color: #131596;
+}
+
+.cv-resume__email{
+    font-family: "Special Elite", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+}
+
+.cv-resume__portrait{
+    width: 45%;
+    position: absolute;
+    top: 9%;
+    left: 62%;
+    transform: rotate(15.315deg);
+}
 
 /* fine-tune placement around laptop widths */
 @media (max-width: 1200px) {
@@ -109,6 +170,24 @@ position: absolute;
     font-size: 20px;
     width: 200px;
   }
+  .cv-resume__splash{
+    position: absolute;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    top: 5%;
+    left: 29%;
+    transform: rotate(-15.315deg);
+    color: #131596;
+}
+.cv-resume__h1{
+    font-family: "Special Elite", cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    width: 200px;
+}
 }
 @media (min-width: 1000px) {
     .cv-paper__name{
@@ -117,6 +196,39 @@ position: absolute;
     font-size: 28px;
     width: 200px;
   }
+    .cv-resume__splash{
+    position: absolute;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    top: -0.5%;
+    left: 21%;
+    transform: rotate(-15.315deg);
+    color: #131596;
+}
+.cv-resume__intro{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+        color: #131596;
+}
+.cv-resume__h1{
+    font-family: "Special Elite", cursive;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+}
+.cv-resume__email{
+    font-family: "Special Elite", cursive;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+}
 }
 /* fine-tune placement around wide desktop */
 @media (min-width: 1600px) {
@@ -130,5 +242,39 @@ position: absolute;
     font-size: 32px;
     width: 300px;
   }
+      .cv-resume__splash{
+    position: absolute;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+    top: -0.5%;
+    left: 16%;
+    transform: rotate(-15.315deg);
+    color: #131596;
+}
+
+.cv-resume__intro{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: normal;
+    width: 600px;
+        color: #131596;
+}
+.cv-resume__h1{
+    font-family: "Special Elite", cursive;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+}
+.cv-resume__email{
+    font-family: "Special Elite", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+}
 }
 
