@@ -67,10 +67,10 @@ position: absolute;
 }
 .cv-paper__stamp{
     position: absolute;
-    width: 21%;
+    width: 17%;
     top: 4%;
-    left: 0%;
-    transform: rotate(-12deg);
+    left: 4%;
+    transform: rotate(-18deg);
 }
 .cv-paper__name{
 position: absolute;
@@ -435,7 +435,7 @@ left: 7%;
 }
 .cv-resume__h1{
     font-family: "Special Elite", cursive;
-    font-size: 62px;
+    font-size: 46px;
     font-weight: 400;
     line-height: normal;
     width: 400px;
