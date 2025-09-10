@@ -55,7 +55,7 @@ position: absolute;
 .cv-paper__sparepaper{
     position: absolute;
     width: 50%;
-    top: 0%;
+    top: -1%;
     right: -15%;
     
 }
@@ -265,7 +265,7 @@ left: 7%;
 @media (max-width: 1200px) {
   .cv-paper__sparepaper {
     right: -10px;  /* scoot it a bit off the edge */
-    top: 5px;      /* nudge it down */
+    top: 2px;      /* nudge it down */
   }
 }
 
@@ -295,6 +295,10 @@ left: 7%;
     font-weight: 400;
     line-height: normal;
     width: 200px;
+}
+    .cv-resume__portrait{
+    left: 60%;
+    top: 9%;
 }
 }
 
@@ -381,6 +385,11 @@ left: 7%;
 .cv-education a {
     font-size: 24px;
 }
+
+    .cv-resume__portrait{
+    left: 60%;
+    top: 8%;
+}
 }
 
 /* ------------------------------------MEDIA QUERY 1200px------------------------------------ */
@@ -403,9 +412,13 @@ left: 7%;
 /* ------------------------------------MEDIA QUERY 1600px------------------------------------ */
 
 @media (min-width: 1600px) {
+
+    .cv-resume{
+    left: 11%;
+    }
   .cv-paper__sparepaper {
     right: -15%;
-    top: 0%;
+    top: -0.5%;
   }
     .cv-paper__name{
     top: 1%;
@@ -425,9 +438,9 @@ left: 7%;
     color: #131596;
 }
 .cv-resume__portrait{
-    left: 50%;
-    top: 8%;
-    width: 40%;
+    left: 52%;
+    top: 7%;
+    width: 37%;
 }
 
 .cv-resume__intro{
