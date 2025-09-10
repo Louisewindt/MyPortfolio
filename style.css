@@ -102,7 +102,7 @@ position: absolute;
 .cv-resume{
     position: relative;
     top: 8%;
-    left: 11%;
+    left: 4%;
 }
 .cv-resume__h1{
     font-family: "Special Elite", cursive;
@@ -110,6 +110,7 @@ position: absolute;
     font-weight: 400;
     line-height: normal;
     width: 200px;
+    margin-bottom: 15px;
 }
 
 .cv-resume__email{
@@ -151,9 +152,101 @@ position: absolute;
     width: 45%;
     position: absolute;
     top: 9%;
-    left: 62%;
+    left: 64%;
     transform: rotate(15.315deg);
 }
+
+.cv-education {
+position: relative;
+top: 9%;
+left: 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "contact   education"
+    "social    languages";
+  column-gap: 2rem;
+  row-gap: 2rem;
+  font-family: "Special Elite", cursive;
+  color: #000;
+}
+
+/* place each block */
+.cv-education__block--contact   { grid-area: contact; }
+.cv-education__block--education { grid-area: education; }
+.cv-education__block--social    { grid-area: social; }
+.cv-education__block--languages { grid-area: languages; }
+
+/* headings */
+.cv-education__title {
+  margin: 0 0 .6rem 0;
+  font-weight: 700;
+  line-height: 1;
+  width: 175px;
+}
+
+/* body text */
+.cv-education p,
+.cv-education a { 
+  margin: .2rem 0;
+  font-size: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* inline rows: icon/flag + text */
+.cv-education__row {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: 3%;
+}
+
+.cv-education__icon  { width: clamp(22px, 3vw, 36px); height: auto; }
+.cv-education__flag  { width: clamp(18px, 2.5vw, 26px); height: auto; }
+.cv-education__link:hover { text-decoration: underline; }
+
+/* small spacing tweaks for education */
+
+
+.cv-paper__coffeetwo{
+    position: relative;
+    width: 105%;
+    left: 46%;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------MEDIA QUERIES------------------------------------ */
 
 /* fine-tune placement around laptop widths */
 @media (max-width: 1200px) {
@@ -162,6 +255,8 @@ position: absolute;
     top: 5px;      /* nudge it down */
   }
 }
+
+/* ------------------------------------MEDIA QUERY 450px------------------------------------ */
 
 @media (min-width: 450px) {
     .cv-paper__name{
@@ -189,6 +284,42 @@ position: absolute;
     width: 200px;
 }
 }
+
+/* ------------------------------------MEDIA QUERY 620px------------------------------------ */
+
+@media (min-width: 620px) {
+.cv-resume__h1{
+    font-size: 42px;
+    width: 400px;
+}
+.cv-resume__splash{
+    font-size: 24px;
+    top: 4%;
+    left: 31%;
+}
+.cv-resume__email{
+    font-size: 20px;
+}
+.cv-resume__intro{
+    font-size: 24px;
+    width: 300px;
+}
+.cv-education__title{
+    font-size: 24px;
+    width: 200px;
+}
+.cv-education p,
+.cv-education a {
+    font-size: 18px;
+}
+.cv-education__flag,
+.cv-education__icon{
+    width: 7%;
+}
+}
+
+/* ------------------------------------MEDIA QUERY 1000px------------------------------------ */
+
 @media (min-width: 1000px) {
     .cv-paper__name{
     top: 1%;
@@ -229,8 +360,30 @@ position: absolute;
     line-height: normal;
     width: 400px;
 }
+.cv-education__title{
+    font-size: 32px;
+    width: 400px;
 }
-/* fine-tune placement around wide desktop */
+.cv-education p,
+.cv-education a {
+    font-size: 24px;
+}
+}
+
+/* ------------------------------------MEDIA QUERY 1200px------------------------------------ */
+
+@media (min-width:1200px){
+    .cv-education{
+        top: 10%;
+    }
+    .cv-resume__portrait{
+    left: 50%;
+    top: 8%;
+}
+}
+
+/* ------------------------------------MEDIA QUERY 1600px------------------------------------ */
+
 @media (min-width: 1600px) {
   .cv-paper__sparepaper {
     right: -15%;
@@ -252,6 +405,10 @@ position: absolute;
     left: 16%;
     transform: rotate(-15.315deg);
     color: #131596;
+}
+.cv-resume__portrait{
+    left: 50%;
+    top: 8%;
 }
 
 .cv-resume__intro{
@@ -275,6 +432,21 @@ position: absolute;
     font-weight: 400;
     line-height: normal;
     width: 400px;
+}
+
+.cv-paper__resume{
+    font-size: 42px;
+}
+.cv-paper__name{
+    font-size: 42px;
+}
+.cv-education__title{
+    font-size: 64px;
+    width: 600px;
+}
+.cv-education p,
+.cv-education a {
+    font-size: 42px;
 }
 }
 
