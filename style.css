@@ -216,6 +216,19 @@ left: 7%;
     z-index: -1;
 }
 
+.cv-paper__Sticker{
+    width: 7%;
+    position: relative;
+}
+.cv-paper__sticker--book{
+    top: -7.7%;
+    left: 52%;
+}
+.cv-paper__sticker--stx{
+    top: 0%;
+    left: 0%;
+}
+
 
 
 
@@ -409,6 +422,7 @@ left: 7%;
 .cv-resume__portrait{
     left: 50%;
     top: 8%;
+    width: 40%;
 }
 
 .cv-resume__intro{
