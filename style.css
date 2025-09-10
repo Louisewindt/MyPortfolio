@@ -42,7 +42,7 @@ body {
 }
 .cv-paper__logo{
 position: absolute;
-  width: min(35%, 50%);
+  width: min(35%, 45%);
     top: 2%;
     left: 33%;
 }
