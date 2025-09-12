@@ -43,7 +43,7 @@ body {
 .cv-paper__logo{
 position: absolute;
   width: min(35%, 45%);
-    top: 2%;
+    top: 1.5%;
     left: 33%;
 }
 .cv-paper__coffee{
@@ -62,33 +62,33 @@ position: absolute;
 .cv-paper__pen{
     position: absolute;
     width: 30%;
-    top: 3%;
+    top: 2%;
     left: 70%;
 }
 .cv-paper__stamp{
     position: absolute;
     width: 17%;
-    top: 4%;
-    left: 4%;
+    top: 2.8%;
+    left: 8%;
     transform: rotate(-18deg);
 }
 .cv-paper__name{
 position: absolute;
     color: #131596;
     font-family: "Special Elite";
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 100px;
     transform: rotate(-15.315deg);
     top: 1%;
-    left: 15%;
+    left: 17%;
 }
 
 .cv-paper__resume{
   position: absolute;
-  top: 6.5%;       /* halfway down the parent */
+  top: 4.5%;       /* halfway down the parent */
   left: 50%;      /* halfway across the parent */
   transform: translate(-50%, -50%); /* pull back by half its own size */
   
@@ -101,7 +101,7 @@ position: absolute;
 
 .cv-resume{
     position: relative;
-    top: 8%;
+    top: 6%;
     left: 4%;
 }
 .cv-resume__h1{
@@ -133,10 +133,10 @@ position: absolute;
 
 .cv-resume__intro{
     font-family: "Shadows Into Light", cursive;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     line-height: normal;
-    width: 200px;
+    width: 150px;
         color: #131596;
 }
 
@@ -151,14 +151,14 @@ position: absolute;
 .cv-resume__portrait{
     width: 45%;
     position: absolute;
-    top: 9%;
+    top: 7%;
     left: 64%;
     transform: rotate(15.315deg);
 }
 
 .cv-education {
 position: relative;
-top: 9%;
+top: 7%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -207,7 +207,7 @@ top: 9%;
 }
 
 .cv-education__icon  { width: clamp(22px, 3vw, 36px); height: auto; }
-.cv-education__flag  { width: clamp(18px, 2.5vw, 26px); height: auto; }
+.cv-education__flag  { width: clamp(12px, 2.5vw, 26px); height: auto; }
 .cv-education__link:hover { text-decoration: underline; }
 
 /* small spacing tweaks for education */
@@ -224,7 +224,6 @@ top: 9%;
 .about{
   width: min(92%, 1100px);
   margin: 2.5rem auto;
-  margin-top: -14%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -234,9 +233,34 @@ top: 9%;
   row-gap: 1.2rem;
   font-family: "Special Elite", cursive;
 }
-.about__title{
-     grid-area: title; text-align:center; margin:0; font-size:clamp(26px,3.2vw,42px); 
+.about__title-wrap{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
 }
+
+.about__title{
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(26px, 3.2vw, 42px);
+  text-align: center;
+}
+
+.about__highlight{
+  position: absolute;
+  top: 55%;                 /* nudge so it sits under the text */
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+  width: 80%;              /* make it a bit wider than the text */
+  height: auto;
+  max-width: none;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .about__text{
      grid-area: text; max-width:70ch; justify-self:center; 
 }
@@ -291,27 +315,27 @@ top: 9%;
   position: absolute;
   right: -7%;
   bottom: -50%;
-  width: clamp(180px, 28vw, 360px);
+  width: clamp(130px, 28vw, 360px);
   aspect-ratio: 1.6 / 1;             /* keeps bubble shape reasonable */
   transform: rotate(-2deg);
 }
 .programs__sticker--image{
   position: absolute;
   inset: 0;
-  width: 110%;
+  width: 120%;
   height: auto;
   object-fit: contain;
   margin: auto;
-    margin-left: -7px;
-    margin-bottom: -45px;
+  margin-left: -21px;     
+  margin-bottom: -45px;
 }
 .programs__sticker--text{
   position: absolute;
   inset: 0;
   display: grid;
   margin: 0;
-  padding: 10% 25%;
-  padding-top: 15%;
+  padding-top: 18%;
+  padding-right: 13%;
   font-family: "Shadows Into Light", cursive;
   font-size: 12px;
   color: #23336a;
@@ -337,7 +361,7 @@ transform: rotate(-15deg);
 .education{
   width: 100%;
   margin: 4rem 0;
-  margin-top: 75%;
+  margin-top: 60%;
   font-family: "Special Elite", cursive;
   color: #000;
   display: grid;
@@ -384,12 +408,52 @@ transform: rotate(-15deg);
 .education__coffeestain{
     width: 70%;
     position: relative;
-    top: -15%;
+    top: -9%;
     left: -7%;
     transform: rotate(-80deg);
     z-index: -1;
 }
+/* Title + highlight wrapper (doesn't affect other layouts) */
+.education__title{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 1rem;
+}
 
+/* keep your existing .education__header styles; just ensure z-layer */
+.education__header{
+  position: relative;
+  z-index: 1; /* text above the highlight */
+}
+
+/* the highlight image behind the H3, scaling with font size */
+.education__highlight{
+  position: absolute;
+  left: 50%;
+  top: 55%;                        /* nudge to sit under text */
+  transform: translate(-50%, -50%) rotate(-2deg);
+
+  width: 250%;                      /* make it wider than the text */
+  height: auto;                     /* preserve aspect ratio */
+  max-width: none;                  /* don’t cap its growth */
+  pointer-events: none;
+  z-index: 0;
+}
+.education__pentext{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: rotate(-8.887deg);
+    color: #131596;
+font-family: "Shadows Into Light";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
 
 
 
@@ -428,7 +492,7 @@ transform: rotate(-15deg);
 @media (max-width: 1200px) {
   .cv-paper__sparepaper {
     right: -10px;  /* scoot it a bit off the edge */
-    top: 2px;      /* nudge it down */
+    top: -1px;      /* nudge it down */
   }
 }
 
@@ -480,13 +544,15 @@ transform: rotate(-15deg);
 }
     .cv-resume__portrait{
     left: 60%;
-    top: 9%;
 }
 }
 
 /* ------------------------------------MEDIA QUERY 620px------------------------------------ */
 
 @media (min-width: 620px) {
+.about{
+ margin-top: 33%;
+}
 .programs{
     margin-top: -15%;
 }
@@ -495,11 +561,16 @@ transform: rotate(-15deg);
     bottom: -40%;
     width: 45%;
 }
+    .programs__sticker--image{
+    width: 100%;
+    }
 .programs__sticker--text{
-    font-size: 16px;
-    padding: 10% 25%;
-    padding-top: 10%;
-    padding-right: 15%;
+    font-size: 18px;
+    padding-top: 15%;
+    width: 150px;
+    height: 50px;
+    padding-right: 0%;
+    padding-left: 16%;
 }
 .programs__laptop{
     width: 50%;
@@ -511,7 +582,7 @@ transform: rotate(-15deg);
     margin-top: -45%;
 }
 .cv-education{
-    top: 10%;
+    top: 8%;
 }
 .cv-resume__h1{
     font-size: 42px;
@@ -576,9 +647,9 @@ transform: rotate(-15deg);
     }
     .programs__sticker--text{
     font-size: 24px;
-    padding: 10% 25%;
-    padding-top: 5%;
-    padding-right: 15%;
+    padding-top: 10%;
+    padding-right: 5%;
+    width: 200px;
     }
     .cv-paper__name{
     top: 1%;
@@ -631,7 +702,7 @@ transform: rotate(-15deg);
 
     .cv-resume__portrait{
     left: 60%;
-    top: 8%;
+    top: 7%;
 }
   .about{
     grid-template-columns: 1fr 1fr;
@@ -640,6 +711,11 @@ transform: rotate(-15deg);
       "text  photo";
     column-gap: 2.5rem;
     row-gap: 1.5rem;
+  }
+    .about__title-wrap{
+    grid-column: 1 / -1;   /* spans the entire row */
+    width: 80%;
+    justify-self: center; /* keep it centered */
   }
   .about__text{ justify-self:start; }
   .about__photo{ justify-self:end; width:min(100%,520px); }
@@ -651,16 +727,19 @@ transform: rotate(-15deg);
 /* ------------------------------------MEDIA QUERY 1200px------------------------------------ */
 
 @media (min-width:1200px){
+    .about{
+ margin-top: 50%;
+}
     .cv-paper__airpods{
         width: 55%;
         margin-top: -15%;
     }
     .cv-education{
-        top: 11%;
+        top: 8%;
     }
     .cv-resume__portrait{
     left: 50%;
-    top: 8%;
+    top: 6%;
 }
 .cv-resume__splash{
     top: 1%;
@@ -670,6 +749,7 @@ transform: rotate(-15deg);
     .programs__sticker{
     right: -5%;
     bottom: -65%;
+    width: 40%;
     }
     .programs__laptop{
         width: 40%;
@@ -677,10 +757,9 @@ transform: rotate(-15deg);
         right: -13%;
     }
     .programs__sticker--text{
-    font-size: 26px;
-    padding: 10% 25%;
-    padding-top: 5%;
-    padding-right: 15%;
+    font-size: 22px;
+    padding-top: 14%;
+    padding-left: 20%;
     }
 }
 
@@ -717,8 +796,8 @@ transform: rotate(-15deg);
     color: #131596;
 }
 .cv-resume__portrait{
-    left: 52%;
-    top: 7%;
+    left: 60%;
+    top: 6%;
     width: 37%;
 }
 
