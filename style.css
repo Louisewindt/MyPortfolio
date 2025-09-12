@@ -159,16 +159,19 @@ position: absolute;
 .cv-education {
 position: relative;
 top: 9%;
-left: 7%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "contact   education"
-    "social    languages";
-  column-gap: 2rem;
+    "social     languages";
+  column-gap:5%;
   row-gap: 2rem;
   font-family: "Special Elite", cursive;
   color: #000;
+
+  width: 80%;          /* control how wide the block is */
+  max-width: 1000px;   /* optional: don’t get too wide */
+  margin: 0 auto;      /* this centers it horizontally */
 }
 
 /* place each block */
@@ -183,7 +186,7 @@ left: 7%;
   margin-top: 2%;
   font-weight: 700;
   line-height: 1;
-  width: 175px;
+  font-size: 16px;
 }
 
 /* body text */
@@ -429,6 +432,9 @@ left: 7%;
     line-height: normal;
     width: 400px;
 }
+
+.cv-education{
+}
 .cv-education__title{
     font-size: 32px;
     width: 400px;
@@ -465,7 +471,7 @@ left: 7%;
         margin-top: -15%;
     }
     .cv-education{
-        top: 10%;
+        top: 11%;
     }
     .cv-resume__portrait{
     left: 50%;
