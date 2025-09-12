@@ -262,9 +262,133 @@ top: 9%;
   pointer-events: none; /* optional: don’t block clicks */
 }
 
+.programs{
+  position: relative;                 /* anchor for stickers */
+  width: min(92%, 1100px);
+  margin: 2.5rem auto 4rem;
+  font-family: "Special Elite", cursive;
+  margin-top: -20%;
+}
 
+/* heading top-left */
+.programs__text{
+  margin: 0 0 .75rem 0.25rem;
+  font-size: clamp(12px, 2.2vw, 20px);
+  font-weight: 400;
+}
 
+/* icons image centered */
+.programs__img{
+  display: block;
+  width: min(100%, 860px);
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.18));
+}
 
+/* speech bubble with text */
+.programs__sticker{
+  position: absolute;
+  right: -7%;
+  bottom: -50%;
+  width: clamp(180px, 28vw, 360px);
+  aspect-ratio: 1.6 / 1;             /* keeps bubble shape reasonable */
+  transform: rotate(-2deg);
+}
+.programs__sticker--image{
+  position: absolute;
+  inset: 0;
+  width: 110%;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+    margin-left: -7px;
+    margin-bottom: -45px;
+}
+.programs__sticker--text{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  margin: 0;
+  padding: 10% 25%;
+  padding-top: 15%;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 12px;
+  color: #23336a;
+  text-align: center;
+  z-index: 1;
+transform: rotate(-15deg);
+
+}
+
+/* laptop sticker bottom-right, slightly under bubble */
+.programs__laptop{
+  position: absolute;
+  right: -15%;
+  bottom: -130%;
+  width: clamp(180px, 22vw, 320px);
+  height: auto;
+  transform: rotate(8deg);
+  z-index: 1;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.22));
+}
+
+/* overall section centered */
+.education{
+  width: 100%;
+  margin: 4rem 0;
+  margin-top: 75%;
+  font-family: "Special Elite", cursive;
+  color: #000;
+  display: grid;
+  place-items: center;   /* centers the row block */
+}
+
+/* title centered */
+.education__header{
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: clamp(28px, 4vw, 56px);
+}
+
+/* ⬇️ SHRINK-WRAP THE GRID ⬇️ */
+.education__row{
+  display: inline-grid;                 /* shrink to its tracks */
+  grid-template-columns: auto auto;     /* exactly two columns */
+  align-items: center;
+  width: fit-content;                   /* prevent full-line stretch */
+  margin-left: -10%;
+}
+
+/* left image */
+.education__image{
+  width: clamp(200px, 48vw, 560px);
+  height: auto;
+  transform: translateX(-10%);          /* keep that "peeking" look */
+}
+
+/* right text block (Figma settings) */
+.education__text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  width: min(546px, 100%);
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.education__what{ margin: .4rem 0 .2rem; font-weight: 700; }
+.education__when, .education__where{ margin: 0; }
+
+.education__coffeestain{
+    width: 70%;
+    position: relative;
+    top: -15%;
+    left: -7%;
+    transform: rotate(-80deg);
+    z-index: -1;
+}
 
 
 
@@ -311,6 +435,22 @@ top: 9%;
 /* ------------------------------------MEDIA QUERY 450px------------------------------------ */
 
 @media (min-width: 450px) {
+    .education__coffeestain{
+    top: -13%;
+    left: -7%;
+    }
+    .programs__sticker{
+    right: -7%;
+    bottom: -40%;
+    }
+    .programs__laptop{
+    right: -15%;
+    bottom: -95%;
+
+    }
+    .programs{
+        margin-top: -5%;
+    }
     .cv-paper__airpods{
         width: 75%;
     }
@@ -347,6 +487,25 @@ top: 9%;
 /* ------------------------------------MEDIA QUERY 620px------------------------------------ */
 
 @media (min-width: 620px) {
+.programs{
+    margin-top: -15%;
+}
+.programs__sticker{
+    right: -7%;
+    bottom: -40%;
+    width: 45%;
+}
+.programs__sticker--text{
+    font-size: 16px;
+    padding: 10% 25%;
+    padding-top: 10%;
+    padding-right: 15%;
+}
+.programs__laptop{
+    width: 50%;
+    right: -15%;
+    bottom: -110%;
+}
 .cv-paper__airpods{
     width: 75%;
     margin-top: -45%;
@@ -389,9 +548,37 @@ top: 9%;
 /* ------------------------------------MEDIA QUERY 1000px------------------------------------ */
 
 @media (min-width: 1000px) {
+    .education{
+        margin-top: 35%;
+        margin-left: 5%;
+    }
+    .education__coffeestain{
+        top: -10%;
+    }
+    .education__text{
+        font-size: x-large;
+    }
+    .education__image{
+        margin-left: -25%;
+    }
     .cv-paper__airpods{
         width: 60%;
         margin-top: -20%;
+    }
+    .programs__sticker{
+    right: 0%;
+    bottom: -50%;
+    }
+    .programs__laptop{
+        width: 35%;
+        bottom: -90%;
+        right: -10%;
+    }
+    .programs__sticker--text{
+    font-size: 24px;
+    padding: 10% 25%;
+    padding-top: 5%;
+    padding-right: 15%;
     }
     .cv-paper__name{
     top: 1%;
@@ -433,8 +620,6 @@ top: 9%;
     width: 400px;
 }
 
-.cv-education{
-}
 .cv-education__title{
     font-size: 32px;
     width: 400px;
@@ -482,6 +667,21 @@ top: 9%;
     left: 18%;
     
 }
+    .programs__sticker{
+    right: -5%;
+    bottom: -65%;
+    }
+    .programs__laptop{
+        width: 40%;
+        bottom: -125%;
+        right: -13%;
+    }
+    .programs__sticker--text{
+    font-size: 26px;
+    padding: 10% 25%;
+    padding-top: 5%;
+    padding-right: 15%;
+    }
 }
 
 /* ------------------------------------MEDIA QUERY 1600px------------------------------------ */
