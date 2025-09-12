@@ -249,6 +249,16 @@ left: 7%;
      transform: rotate(-5deg); 
 }
 
+.cv-paper__airpods{
+  position: relative;   /* needed for z-index to work */
+  z-index: 2;           /* now it’s above the photo */
+  left: -15%;
+  /* place it however you like */
+  width: 100%;
+  margin-top: -60%;     /* your current placement */
+  pointer-events: none; /* optional: don’t block clicks */
+}
+
 
 
 
@@ -298,6 +308,9 @@ left: 7%;
 /* ------------------------------------MEDIA QUERY 450px------------------------------------ */
 
 @media (min-width: 450px) {
+    .cv-paper__airpods{
+        width: 75%;
+    }
     .cv-paper__name{
     top: 0.5%;
     left: 26%;
@@ -331,6 +344,10 @@ left: 7%;
 /* ------------------------------------MEDIA QUERY 620px------------------------------------ */
 
 @media (min-width: 620px) {
+.cv-paper__airpods{
+    width: 75%;
+    margin-top: -45%;
+}
 .cv-education{
     top: 10%;
 }
@@ -369,6 +386,10 @@ left: 7%;
 /* ------------------------------------MEDIA QUERY 1000px------------------------------------ */
 
 @media (min-width: 1000px) {
+    .cv-paper__airpods{
+        width: 60%;
+        margin-top: -20%;
+    }
     .cv-paper__name{
     top: 1%;
     left: 26%;
@@ -439,6 +460,10 @@ left: 7%;
 /* ------------------------------------MEDIA QUERY 1200px------------------------------------ */
 
 @media (min-width:1200px){
+    .cv-paper__airpods{
+        width: 55%;
+        margin-top: -15%;
+    }
     .cv-education{
         top: 10%;
     }
@@ -456,6 +481,10 @@ left: 7%;
 /* ------------------------------------MEDIA QUERY 1600px------------------------------------ */
 
 @media (min-width: 1600px) {
+    .cv-paper__airpods{
+        width: 55%;
+        margin-top: -7%;
+    }
 
     .cv-resume{
     left: 11%;
