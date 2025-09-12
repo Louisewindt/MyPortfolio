@@ -217,40 +217,36 @@ left: 7%;
     z-index: -1;
 }
 
-.cv-paper__aboutme {
-  position: relative;
-  top: -4%;
-  display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center if you give it a height */
-  margin: 2rem auto;       /* centers the section itself */
-  text-align: center;      /* centers the text inside */
-}
-
-.cv-paper__aboutme--text {
-  position: relative;
-  z-index: 1;              /* keep text on top of the highlight */
+/* Base: mobile = one column (title, text, photo) */
+.about{
+  width: min(92%, 1100px);
+  margin: 2.5rem auto;
+  margin-top: -14%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "text"
+    "photo";
+  row-gap: 1.2rem;
   font-family: "Special Elite", cursive;
-  font-size: 26px;
-  margin: 0;
+}
+.about__title{
+     grid-area: title; text-align:center; margin:0; font-size:clamp(26px,3.2vw,42px); 
+}
+.about__text{
+     grid-area: text; max-width:70ch; justify-self:center; 
+}
+.about__text p{ 
+    margin:.6rem 0; font-size:clamp(14px,1.6vw,20px); line-height:1.45; 
+}
+.about__more{
+ display:none; 
 }
 
-.cv-paper__aboutme--highlight {
-  position: absolute;
-  width: 70%;              /* make the highlight a bit wider than text */
-  max-width: 400px;
-  height: auto;
-  z-index: 0;
-}
-
-.cv-paper__aboutme--about{
-  font-family: "Special Elite", cursive;
-  width: 80%;
-  margin: 2rem auto;      /* centers the block in the page */
-  display: flex;
-  justify-content: center; /* centers the block horizontally */
-  margin-top: -35%;
-  font-size: 12px;
+.about__photo{
+ grid-area: photo; width:min(88%,420px); height:auto; justify-self:center;
+     transform: rotate(-5deg); 
 }
 
 
@@ -425,6 +421,19 @@ left: 7%;
     left: 60%;
     top: 8%;
 }
+  .about{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "text  photo";
+    column-gap: 2.5rem;
+    row-gap: 1.5rem;
+  }
+  .about__text{ justify-self:start; }
+  .about__photo{ justify-self:end; width:min(100%,520px); }
+  .about__more{ display:block; }
+
+
 }
 
 /* ------------------------------------MEDIA QUERY 1200px------------------------------------ */
@@ -523,6 +532,13 @@ left: 7%;
 }
 .cv-education{
     left: 13%;
+}
+.cv-paper__aboutme{
+    top: -3%;
+}
+.cv-paper__aboutme--about{
+    margin-top: -22%;
+    font-size: 28px;
 }
 }
 
