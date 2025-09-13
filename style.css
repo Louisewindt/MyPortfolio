@@ -290,7 +290,7 @@ margin-top: -8%;
   width: min(92%, 1100px);
   margin: 2.5rem auto 4rem;
   font-family: "Special Elite", cursive;
-  margin-top: -33%;
+  margin-top: -95%;
 }
 
 /* heading top-left */
@@ -408,7 +408,7 @@ transform: rotate(-15deg);
 .education__coffeestain{
     width: 70%;
     position: relative;
-    top: -20%;
+    top: -15%;
     left: -7%;
     transform: rotate(-80deg);
     z-index: -1;
@@ -467,7 +467,7 @@ position: relative;
   width: min(92%, 900px);
   margin: 4rem auto;
   transform: rotate(13.22deg); /* tilt the whole book section */
-  top: -13%;
+  top: -18%;
 }
 
 .workexp__bg {
@@ -560,7 +560,19 @@ position: relative;
     width: 39%;
     transform: rotate(-18deg);
 }
-
+.cv-paper__eraser{
+  width: 82%;
+  position: relative;
+  z-index: 2;
+  top: -8%;
+  left: 47%;
+}
+.clutter{
+  width: 65%;
+  position: relative;
+  top: -14%;
+  left: 52%;
+}
 
 
 
@@ -784,6 +796,9 @@ position: relative;
 /* ------------------------------------MEDIA QUERY 768px------------------------------------ */
 
 @media (min-width:768px){
+.workexp{
+  top: -15.5%;
+}
 .workexp__pen{
   bottom: -50%;
 }
@@ -801,6 +816,20 @@ position: relative;
 }
 .workexp__bg{
   width: 164%;
+}
+.cv-paper__eraser{
+  width: 50%;
+  top: -5%;
+  left: 60%;
+}
+.programs{
+  margin-top: -41%;
+}
+.programs__sticker{
+  bottom: -50%;
+}
+.clutter{
+  top: -12%;
 }
 }
 
