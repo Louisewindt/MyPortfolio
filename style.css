@@ -88,7 +88,7 @@ position: absolute;
 
 .cv-paper__resume{
   position: absolute;
-  top: 4.5%;       /* halfway down the parent */
+  top: 6%;       /* halfway down the parent */
   left: 50%;      /* halfway across the parent */
   transform: translate(-50%, -50%); /* pull back by half its own size */
   
@@ -101,7 +101,7 @@ position: absolute;
 
 .cv-resume{
     position: relative;
-    top: 6%;
+    top: 7%;
     left: 4%;
 }
 .cv-resume__h1{
@@ -151,7 +151,7 @@ position: absolute;
 .cv-resume__portrait{
     width: 45%;
     position: absolute;
-    top: 7%;
+    top: 8%;
     left: 64%;
     transform: rotate(15.315deg);
 }
@@ -223,14 +223,14 @@ top: 7%;
 /* Base: mobile = one column (title, text, photo) */
 .about{
   width: min(92%, 1100px);
-  margin: 2.5rem auto;
+  margin: -6rem auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "title"
     "text"
     "photo";
-  row-gap: 1.2rem;
+  row-gap: 10px;
   font-family: "Special Elite", cursive;
 }
 .about__title-wrap{
@@ -238,7 +238,6 @@ top: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.2rem;
 }
 
 .about__title{
@@ -272,17 +271,17 @@ top: 7%;
 }
 
 .about__photo{
- grid-area: photo; width:min(88%,420px); height:auto; justify-self:center;
+ grid-area: photo; width:min(88%,320px); height:auto; justify-self:center;
      transform: rotate(-5deg); 
 }
 
 .cv-paper__airpods{
   position: relative;   /* needed for z-index to work */
   z-index: 2;           /* now it’s above the photo */
-  left: -15%;
+  left: -44%;
   /* place it however you like */
   width: 100%;
-  margin-top: -60%;     /* your current placement */
+margin-top: -8%;
   pointer-events: none; /* optional: don’t block clicks */
 }
 
@@ -291,7 +290,7 @@ top: 7%;
   width: min(92%, 1100px);
   margin: 2.5rem auto 4rem;
   font-family: "Special Elite", cursive;
-  margin-top: -20%;
+  margin-top: -33%;
 }
 
 /* heading top-left */
@@ -304,7 +303,7 @@ top: 7%;
 /* icons image centered */
 .programs__img{
   display: block;
-  width: min(100%, 860px);
+  width: min(75%, 660px);
   height: auto;
   margin: 0 auto;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,.18));
@@ -314,7 +313,7 @@ top: 7%;
 .programs__sticker{
   position: absolute;
   right: -7%;
-  bottom: -50%;
+    bottom: -38%;
   width: clamp(130px, 28vw, 360px);
   aspect-ratio: 1.6 / 1;             /* keeps bubble shape reasonable */
   transform: rotate(-2deg);
@@ -349,8 +348,8 @@ transform: rotate(-15deg);
 .programs__laptop{
   position: absolute;
   right: -15%;
-  bottom: -130%;
-  width: clamp(180px, 22vw, 320px);
+  bottom: -115%;
+  width: clamp(120px, 22vw, 320px);
   height: auto;
   transform: rotate(8deg);
   z-index: 1;
@@ -361,7 +360,7 @@ transform: rotate(-15deg);
 .education{
   width: 100%;
   margin: 4rem 0;
-  margin-top: 60%;
+    margin-top: 40%;
   font-family: "Special Elite", cursive;
   color: #000;
   display: grid;
@@ -400,6 +399,7 @@ transform: rotate(-15deg);
   width: min(546px, 100%);
   flex-shrink: 0;
   font-size: 12px;
+  margin-top: -48%;
 }
 
 .education__what{ margin: .4rem 0 .2rem; font-weight: 700; }
@@ -408,7 +408,7 @@ transform: rotate(-15deg);
 .education__coffeestain{
     width: 70%;
     position: relative;
-    top: -9%;
+    top: -20%;
     left: -7%;
     transform: rotate(-80deg);
     z-index: -1;
@@ -419,7 +419,8 @@ transform: rotate(-15deg);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 1rem;
+  margin: 0%;
+  margin-bottom: -5%;
 }
 
 /* keep your existing .education__header styles; just ensure z-layer */
@@ -442,17 +443,122 @@ transform: rotate(-15deg);
   z-index: 0;
 }
 .education__pentext{
-    position: relative;
-    top: 0%;
-    left: 0%;
-    transform: rotate(-8.887deg);
+position: relative;
+    top: -13.5%;
+    left: 49%;
+    transform: rotate(-7.887deg);
     color: #131596;
-font-family: "Shadows Into Light";
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: "Shadows Into Light";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
+.education__sticker{
+  width: 15%;
+  position: relative;
+  top: -18.7%;
+  left: 64%;
+}
+
+.workexp {
+  position: relative;
+  width: min(92%, 900px);
+  margin: 4rem auto;
+  transform: rotate(13.22deg); /* tilt the whole book section */
+  top: -13%;
+}
+
+.workexp__bg {
+  display: block;
+  width: 200%;
+  height: auto;
+  margin-left: -84%;
+}
+
+.workexp__content {
+  position: absolute;
+  inset: 0;
+  padding: 8% 10%;
+  box-sizing: border-box;
+  font-family: "Special Elite", cursive;
+  color: #000;
+}
+
+/* title + highlight */
+.workexp__titlewrap {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.workexp__title {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(16px, 3vw, 36px);
+  margin-bottom: 0%;
+  margin-top: 8%;
+}
+.workexp__highlight {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.workexp__text{
+  width: 150px;
+  margin-left: 10%;
+}
+
+/* text block */
+.workexp__company {
+  font-weight: 700;
+  margin: 0.3rem 0;
+  font-size: 14px;
+}
+.workexp__dates {
+  margin-bottom: 1%;
+  font-size: 9px;
+}
+.workexp__desc {
+  margin: 0 0 1.5rem;
+  line-height: 1.4;
+  max-width: 45ch;
+  font-size: 12px;
+  width: 170px;
+}
+
+/* stickers + extras */
+.workexp__stamp {
+    position: absolute;
+    top: 16%;
+    right: 12%;
+    width: 20%;
+}
+.workexp__brand {
+    position: absolute;
+    top: 26%;
+    right: 8%;
+    width: 25%;
+}
+.workexp__photo {
+    position: absolute;
+    bottom: -4%;
+    left: 36%;
+    width: 55%;
+    transform: rotate(-23deg);
+}
+.workexp__pen {
+    position: absolute;
+    bottom: -43%;
+    right: -25%;
+    width: 39%;
+    transform: rotate(-18deg);
 }
 
 
@@ -505,22 +611,26 @@ line-height: normal;
     }
     .programs__sticker{
     right: -7%;
-    bottom: -40%;
+    bottom: -10%;
     }
     .programs__laptop{
-    right: -15%;
-    bottom: -95%;
+        right: -10%;
+        bottom: -55%;
 
     }
     .programs{
-        margin-top: -5%;
+        margin-top: -16%;
     }
     .cv-paper__airpods{
-        width: 75%;
+        width: 80%;
+        left: -25%;
+    }
+    .cv-paper__resume{
+      top: 5.5%;
     }
     .cv-paper__name{
-    top: 0.5%;
-    left: 26%;
+    top: 0.2%;
+    left: 15%;
     font-size: 20px;
     width: 200px;
   }
@@ -545,20 +655,34 @@ line-height: normal;
     .cv-resume__portrait{
     left: 60%;
 }
+
+.workexp__text{
+  margin-left: 12%;
+}
+.workexp__desc {
+    font-size: 14px;
+}
+.workexp__dates {
+    margin-bottom: 5%;
+    font-size: 10px;
+}
+.workexp__photo{
+  bottom: 3%;
+}
 }
 
 /* ------------------------------------MEDIA QUERY 620px------------------------------------ */
 
 @media (min-width: 620px) {
 .about{
- margin-top: 33%;
+ margin-top: -20%;
 }
 .programs{
-    margin-top: -15%;
+  margin-top: -3%;
 }
 .programs__sticker{
     right: -7%;
-    bottom: -40%;
+    bottom: -42%;
     width: 45%;
 }
     .programs__sticker--image{
@@ -570,16 +694,16 @@ line-height: normal;
     width: 150px;
     height: 50px;
     padding-right: 0%;
-    padding-left: 16%;
+    padding-left: 10%;
 }
 .programs__laptop{
-    width: 50%;
-    right: -15%;
-    bottom: -110%;
+  width: 40%;
+  right: -11%;
+  bottom: -108%;
 }
 .cv-paper__airpods{
-    width: 75%;
-    margin-top: -45%;
+    width: 69%;
+     margin-top: -39%;
 }
 .cv-education{
     top: 8%;
@@ -613,6 +737,70 @@ line-height: normal;
 }
 .cv-education__icon{
     width: 8.5%;
+}
+.education__pentext{
+  font-size: 16px;
+  top: -12.5%;
+  left: 56%;
+}
+.education__text{
+  font-size: 14px;
+}
+.workexp{
+  top: -12.5%;
+}
+.workexp__pen {
+    position: absolute;
+    bottom: -32%;
+    right: -21%;
+    width: 39%;
+}
+.workexp__bg {
+    display: block;
+    width: 164%;
+    height: auto;
+    margin-left: -61%;
+}
+.workexp__highlight{
+  width: 67%;
+}
+    .workexp__text {
+        margin-left: 21%;
+    }
+.workexp__stamp{
+  right: 24%;
+}
+.workexp__brand{
+  top: 26%;
+    right: 24%;
+    width: 22%;
+}
+.workexp__photo{
+  bottom: 10%;
+  width: 45%;
+}
+}
+
+/* ------------------------------------MEDIA QUERY 768px------------------------------------ */
+
+@media (min-width:768px){
+.workexp__pen{
+  bottom: -50%;
+}
+.workexp__stamp {
+  right: 13%;
+}
+.workexp__brand{
+ right: 12%;
+}
+.workexp__title{
+  font-size: 23px;
+}
+.workexp__titlewrap{
+  left: 5%;
+}
+.workexp__bg{
+  width: 164%;
 }
 }
 
@@ -721,7 +909,32 @@ line-height: normal;
   .about__photo{ justify-self:end; width:min(100%,520px); }
   .about__more{ display:block; }
 
+.workexp__bg {
+width: 135%;
+}
+.workexp {
+top: -11%;
+}
+.workexp__titlewrap {
+  left: -22%;
+}
+.workexp__text {
+margin-left: 0%;
+width: 200px;
+}
+.workexp__company{
+  font-size: 16px;
 
+}
+.workexp__desc{
+  width: 200px;
+  font-size: 16px;
+}
+.workexp__photo {      
+bottom: 6%;
+width: 36%;
+left: 0%;
+}
 }
 
 /* ------------------------------------MEDIA QUERY 1200px------------------------------------ */
