@@ -573,6 +573,98 @@ position: relative;
   top: -14%;
   left: 52%;
 }
+/* ===== Work Experience #2 (mirrored) ===== */
+.workexp2{
+  position: relative;
+  width: min(92%, 900px);
+  margin: 4rem auto;
+  transform: rotate(-13.22deg); /* opposite tilt */
+  top: -21%;
+    left: 14%;
+}
+
+.workexp2__bg{
+  display: block;
+  width: 200%;          /* match your first book scaling */
+  height: auto;
+  margin-left: -84%;
+}
+
+.workexp2__content{
+  position: absolute;
+  inset: 0;
+  padding: 8% 10%;
+  box-sizing: border-box;
+  font-family: "Special Elite", cursive;
+  color: #000;
+}
+
+/* title + highlight */
+.workexp2__titlewrap{
+  position: relative;
+  text-align: center;
+  margin: 0 0 1.2rem 0;
+}
+.workexp2__title{
+  position: relative;
+  z-index: 1;
+  font-size: clamp(16px, 3vw, 36px);
+  margin: 8% 0 0;
+}
+.workexp2__highlight{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* text block */
+.workexp2__text{ 
+  width: 200px; 
+  margin-left: 10%;
+}
+.workexp2__role{
+  font-weight: 700;
+  margin: 0.3rem 0;
+  font-size: 16px;
+}
+.workexp2__dates{
+  margin: 0 0 0.6rem;
+  font-size: 10px;
+}
+.workexp2__desc{
+  margin: 0 0 1rem;
+  line-height: 1.4;
+  font-size: 12px;
+  width: 200px;        /* keeps narrow column like your first book */
+}
+
+/* one sticker (mirror the side relative to book #1) */
+.workexp2__sticker{
+  position: absolute;
+    top: 13%;
+    left: 61%;
+    width: 28%;
+  transform: rotate(6deg);
+}
+
+/* linked photo */
+.workexp2__link{ 
+  position: absolute; 
+  bottom: -42%; 
+  left: 0%;
+  display: inline-block; 
+}
+.workexp2__photo{
+  width: 103%;
+  height: auto;
+  transform: rotate(6deg);            /* small opposing tilt for vibe */
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.25));
+}
 
 
 
@@ -681,6 +773,7 @@ position: relative;
 .workexp__photo{
   bottom: 3%;
 }
+.workexp2__desc{ font-size: 14px; }
 }
 
 /* ------------------------------------MEDIA QUERY 620px------------------------------------ */
@@ -791,6 +884,12 @@ position: relative;
   bottom: 10%;
   width: 45%;
 }
+  .workexp2{ margin-top: 2rem; }
+  .workexp2__bg{ width: 164%; margin-left: -61%; }
+  .workexp2__highlight{ width: 67%; }
+  .workexp2__sticker{ left: 24%; }
+  .workexp2__photo{ width: 45%; }
+  .workexp2__pen{ bottom: -32%; left: -6%; width: 39%; }
 }
 
 /* ------------------------------------MEDIA QUERY 768px------------------------------------ */
@@ -831,6 +930,10 @@ position: relative;
 .clutter{
   top: -12%;
 }
+  .workexp2{ margin-top: 3rem; }
+  .workexp2__pen{ bottom: -50%; }
+  .workexp2__title{ font-size: 23px; }
+  .workexp2__titlewrap{ right: 5%; } /* slight mirror nudge */
 }
 
 /* ------------------------------------MEDIA QUERY 1000px------------------------------------ */
@@ -976,6 +1079,14 @@ top: 23%;
 bottom: -50%;
 width: 50%;
 }
+  .workexp2{ margin-top: 4rem; }
+  .workexp2__bg{ width: 135%; }
+  .workexp2__titlewrap{ right: -22%; }
+  .workexp2__text{ width: 220px; }
+  .workexp2__desc{ width: 220px; font-size: 16px; }
+  .workexp2__photo{ bottom: 6%; width: 36%; right: 0%; }
+  .workexp2__sticker{ left: 12%; top: 28%; }
+  .workexp2__pen{ bottom: -50%; width: 44%; left: -10%; }
 }
 
 /* ------------------------------------MEDIA QUERY 1200px------------------------------------ */
