@@ -812,7 +812,7 @@ position: relative;
         margin-left: 5%;
     }
     .education__coffeestain{
-        top: -10%;
+        top: -12%;
     }
     .education__text{
         font-size: x-large;
@@ -826,11 +826,11 @@ position: relative;
     }
     .programs__sticker{
     right: 0%;
-    bottom: -50%;
+    bottom: -60%;
     }
     .programs__laptop{
         width: 35%;
-        bottom: -90%;
+        bottom: -100%;
         right: -10%;
     }
     .programs__sticker--text{
@@ -934,6 +934,18 @@ width: 200px;
 bottom: 6%;
 width: 36%;
 left: 0%;
+}
+.workexp__brand {
+right: 47%;
+top: 43%;
+}
+.workexp__stamp {
+right: 46%;
+top: 23%;
+}
+.workexp__pen {
+bottom: -50%;
+width: 50%;
 }
 }
 
