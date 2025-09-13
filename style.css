@@ -652,20 +652,76 @@ position: relative;
   transform: rotate(6deg);
 }
 
-/* linked photo */
-.workexp2__link{ 
-  position: absolute; 
-  bottom: -42%; 
-  left: 0%;
-  display: inline-block; 
+.workexp2__link{
+    position: absolute;
+    bottom: -32%;
+    left: -200px;
+    width: clamp(304px, 40%, 420px);
+    display: block;
 }
 .workexp2__photo{
-  width: 103%;
+  display: block;
+  width: 100%;
   height: auto;
-  transform: rotate(6deg);            /* small opposing tilt for vibe */
+  transform: rotate(24deg);
   filter: drop-shadow(0 8px 16px rgba(0,0,0,.25));
 }
 
+.workexp2__postText{
+  position: relative;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 12px;
+  color: red;
+    top: 16%;
+    left: 42%;
+    width: 75px;
+}
+.workexp__arrow{
+  position: relative;
+  width: 25%;
+  top: 0%;
+  left: 36%;
+}
+.workexp2__postSection{
+  margin-top: 25%;
+}
+.newspaper {
+  position: relative;
+  width: 111%;
+  margin: 4rem 0 0; /* space above if needed */
+  z-index: 5;       /* above the board background */
+left: -259%;
+    top: -156%;
+  transform: rotate(26.935deg);
+
+}
+
+.newspaper__img {
+  display: block;
+  width: 400%;
+  height: auto;
+  object-fit: cover; /* ensures it stretches edge to edge */
+}
+
+
+/*------------------------Here the paper ends------------------------ */
+.branding{
+  width: 320px;
+  overflow: hidden;
+  padding-top: 50%;
+}
+.branding__logo{
+  width: 50%;
+}
+.branding__sticker{
+  width: 50%;
+}
+.branding-intro__bg{
+  width: 50%;
+}
+.branding__image{
+  width: 50%;
+}
 
 
 
