@@ -223,7 +223,7 @@ top: 7%;
 /* Base: mobile = one column (title, text, photo) */
 .about{
   width: min(92%, 1100px);
-  margin: -6rem auto;
+  margin: -3rem auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -692,7 +692,7 @@ position: relative;
   z-index: 5;       /* above the board background */
 left: -259%;
     top: -156%;
-  transform: rotate(26.935deg);
+  transform: rotate(22.935deg);
 
 }
 
@@ -711,7 +711,8 @@ left: -259%;
   padding-top: 50%;
 }
 .branding__logo{
-  width: 50%;
+  width: 80%;
+
 }
 .branding__sticker{
   width: 50%;
