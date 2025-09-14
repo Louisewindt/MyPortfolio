@@ -1123,6 +1123,8 @@ position: relative;
 
 /* responsive video */
 .video__player{
+  position: relative;
+  z-index: 10;
   display: block;
   width: 100%;
   height: auto;
@@ -1135,11 +1137,11 @@ position: relative;
 /* corner image overlay */
 .video__badge{
   position: absolute;
+  z-index: 11;
   top: -10px;                     /* scoot above the corner a bit */
   right: -10px;
   width: clamp(120px, 22%, 220px);/* scales with container */
   height: auto;
-  z-index: 2;
   pointer-events: none;           /* don’t block clicks on the controls */
   filter: drop-shadow(0 4px 10px rgba(0,0,0,.25));
 }
