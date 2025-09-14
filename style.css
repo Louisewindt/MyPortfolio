@@ -13,13 +13,15 @@ body {
   margin: 0;
   background-image: url("images/Board.png"); 
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
+  overflow-x: clip;
 }
 /* PAPER SECTION */
 .cv-paper {            /* parent gets the height from the image */
   position: relative;
   padding-block: 2rem; /* optional breathing room */
+  overflow: hidden;
 }
 
 .cv-paper__bg {        /* the paper itself – responsive */
@@ -444,7 +446,7 @@ transform: rotate(-15deg);
 }
 .education__pentext{
 position: relative;
-    top: -13.5%;
+    top: -11%;
     left: 49%;
     transform: rotate(-7.887deg);
     color: #131596;
@@ -467,7 +469,7 @@ position: relative;
   width: min(92%, 900px);
   margin: 4rem auto;
   transform: rotate(13.22deg); /* tilt the whole book section */
-  top: -18%;
+  top: -14%;
 }
 
 .workexp__bg {
@@ -570,7 +572,7 @@ position: relative;
 .clutter{
   width: 65%;
   position: relative;
-  top: -14%;
+  top: -11%;
   left: 52%;
 }
 /* ===== Work Experience #2 (mirrored) ===== */
@@ -579,7 +581,7 @@ position: relative;
   width: min(92%, 900px);
   margin: 4rem auto;
   transform: rotate(-13.22deg); /* opposite tilt */
-  top: -21%;
+  top: -16%;
     left: 14%;
 }
 
@@ -690,8 +692,8 @@ position: relative;
   width: 111%;
   margin: 4rem 0 0; /* space above if needed */
   z-index: 5;       /* above the board background */
-left: -259%;
-    top: -156%;
+  left: -259%;
+    top: -87%;
   transform: rotate(22.935deg);
 
 }
@@ -706,23 +708,444 @@ left: -259%;
 
 /*------------------------Here the paper ends------------------------ */
 .branding{
-  width: 320px;
-  overflow: hidden;
-  padding-top: 50%;
+  position: relative;
+  width: min(92%, 900px);
+  margin: 7rem auto 5rem;
 }
+
+/* title image centered */
 .branding__logo{
-  width: 80%;
+  display: block;
+  width: 100%;
+  margin: 0 auto 1.25rem;   /* centers it */
+}
+
+/* paper snippet with text on top */
+.branding-intro{
+  left: -12%;
+}
+.paper-snip{
+  position: relative;
+  width: min(95%, 680px);
+    font-family: "Shadows Into Light", cursive;
+}
+.paper-snip__bg{
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.18));
+}
+
+.paper-snip__text{
+  position: absolute;
+  inset: 0;                 /* fill the paper area */
+  display: grid;
+  place-items: center;      /* easy center */
+  padding: 16% 12%;         /* breathe inside the “paper” */
+  margin: 0;
+  text-align: left;         /* looks handwritten */
+  font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.35;
+  color: #131596;
 
 }
+
+/* mic sticker floating near the snippet */
 .branding__sticker{
-  width: 50%;
+  position: absolute;
+    width: clamp(160px, 14%, 260px);
+    right: -14%;
+    top: 10%;
+  transform: rotate(8deg);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.2));
+  pointer-events: none;
 }
-.branding-intro__bg{
-  width: 50%;
+
+/* Bread & Coffee logo under the snippet */
+.branding__brandlogo{
+  position: absolute;         /* pull it out of normal flow */
+  z-index: 2;                 /* higher than the polaroid image */
+  width: clamp(195px, 32%, 260px);
+    left: 73%;
+    top: 21%;
+  transform: translateX(-50%) rotate(-4deg);
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.18));
 }
+
+/* the polaroid collage (single image) */
 .branding__image{
-  width: 50%;
+  position: relative;
+  z-index: 1;                 /* sits below the logo */
+  display: block;
+    width: min(165%, 720px);
+    margin-left: -34%;
+  margin-top: -18%;
+  height: auto;
+  transform: rotate(-3deg);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,.25));
 }
+.branding-focus{
+  position: relative;
+  width: min(95%, 680px);
+  left: -12%;
+  transform: rotate(15.917deg);
+  margin-top: -28%;
+}
+
+.branding-focus__bg{
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.18));
+}
+
+.branding-focus__text{
+  position: absolute;
+  inset: 0;                 /* fill the paper area */
+  display: grid;
+  place-items: center;      /* easy center */
+  padding: 16% 12%;         /* breathe inside the “paper” */
+  margin: 0;
+  text-align: left;         /* looks handwritten */
+  font-size: clamp(12px, 2.2vw, 18px);
+  line-height: 1.35;
+  color: #131596;
+}
+
+.branding__stickynotes{
+  position: relative;
+  width: 120%;
+  left: -13%;
+    top: -75px;
+}
+
+.signs{
+  position: relative;
+  width: min(92%, 900px);
+  margin: -30% auto 5rem;
+}
+.signs__image{ 
+  width: 150%; 
+  margin-left: -26%; 
+  margin-top: -34%; 
+}
+.signs-bus{ 
+  left: -13%; 
+  margin-top: -19%;
+}
+
+.signs__logo{
+  display: block;
+  width: 100%;
+  margin: 0 auto 1.25rem;
+}
+
+/* paper note at top */
+.signs-intro{ margin-top: -15%; left: -9%; }
+
+/* stack wrapper = anchor for absolute positioning */
+.signs__stack{
+  position: relative;
+  width: 150%;
+  margin-left: -26%;
+  margin-top: -6%;           /* adjust to taste */
+}
+
+/* polaroids */
+.signs__busimage{
+  position: relative;        /* sits above card */
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: rotate(-3deg);  /* optional vibe */
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.25));
+}
+
+/* blue bus card behind, angled */
+.signs__buscard{
+    position: absolute;
+    z-index: 1;
+    right: -15%;
+    top: -7%;
+    width: 81%;
+    transform: rotate(116deg);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .2));
+    pointer-events: none;
+}
+.signs-parking{
+  transform: rotate(-16deg);
+  margin-left: -14%;
+  top: -100px;
+}
+
+.signs__parkingimage{
+  width: 150%;
+  margin-left: -20%;
+  margin-top: -80%;
+}
+
+.socialMedia {
+  position: relative;
+  width: min(92%, 500px);   /* control how big the whole block is */
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.socialMedia__logo{
+  width: 100%;
+  margin-top: -33%;
+}
+.socialMedia-intro{
+  transform: rotate(-3.882deg);
+  margin-top: -7%;
+  margin-left: -4%;
+}
+
+.socialMedia__image{
+  position: absolute;
+    top: 36%;
+    left: 0%;
+    width: 40%;
+}
+
+.socialMedia__phone {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;   /* phone size */
+  transform: rotate(7.387deg);
+  left: 26%;
+}
+
+.socialMedia__gif {
+  position: absolute;     /* float inside the phone */
+  top: 50%;               /* center vertically */
+  left: 50%;              /* center horizontally */
+  transform: translate(-50%, -50%);  /* perfect centering */
+  width: 65%;             /* your requested size */
+  height: auto;
+  z-index: 0;
+  border-radius: 30px;
+}
+
+
+.socialMedia__frame {
+  display: block;         /* frame stays full size */
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;             /* on top of gif */
+  pointer-events: none;
+}
+.socialMedia-bubble {
+  position: absolute;
+  width: min(70%, 320px); /* responsive bubble */
+  margin: 1.5rem auto 0; /* space above and centered */
+    top: 16%;
+    left: -15%;
+    transform: rotate(-6.718deg);
+}
+
+.socialMedia-bubble__bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.socialMedia-bubble__text {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;   /* centers your text inside */
+  padding: 15% 15%;      /* keeps text inside bubble edges */
+  margin: 0;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: clamp(12px, 2vw, 18px);
+  color: #23336a;
+}
+.socialMedia__link {
+  position: absolute;
+  top: 13%;
+  left: 0%;
+  width: 40%;
+  display: block;
+  z-index: 5;   
+}
+
+.socialMedia__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: auto;
+}
+.socialMedia-about{
+  margin-top: 0%;
+  transform: rotate(-10.989deg);
+  left: -8%;
+}
+.socialMedia-about2{
+  margin-top: -14%;
+  transform: rotate(10.989deg);
+  left: 16%;
+}
+.socialMedia__airpods{
+  width: 100%;
+  position: relative;
+  left: -20%;
+}
+
+.socialMedia-about3{
+  margin-top: -25%;
+}
+
+.socialMedia__instagramimage{
+  width: 130%;
+  margin-top: -3%;
+  margin-left: -6%;
+}
+
+.socialMedia-about4{
+    margin-top: -25%;
+    transform: rotate(18.753deg);
+}
+
+.UIUX__logo{
+  width: 100%;
+}
+
+/* wrapper */
+.ds{
+  position: relative;
+  width: min(92%, 900px);
+  margin: 3rem auto;
+}
+
+/* two-up layout (stacks on small screens) */
+.ds__row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin-left: -14%;
+}
+
+
+/* sticky note with text overlay */
+.ds-sticky{ 
+  position: relative; 
+  margin: 0;
+  width: 90%;
+  transform: rotate(-19deg); 
+}
+.ds-sticky__img{ display: block; width: 100%; height: auto; }
+.ds-sticky__text{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 18% 12%;
+  padding-top: 62%;
+  margin: 0;
+  text-align: center;
+  font-family: "Special Elite", system-ui;
+  font-size: clamp(16px, 2.4vw, 28px);
+  line-height: 1.1;
+  color: #000;
+  pointer-events: none;   /* keep the image clickable if needed */
+}
+
+/* your existing paper-snip base is reused; just make this one 10% smaller */
+.paper-snip--sm{ 
+  width: 140%;
+  margin-left: -5%;
+}
+
+/* gif under the row */
+.ds__gif{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.25rem;
+  border-radius: 6px;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.18));
+}
+
+/* ===== ANIMALS (paper left, svg right) ===== */
+/* wrapper just gives us a place to center + control width */
+.animals{
+  width: min(92%, 1100px);
+  margin: 2rem auto 0;
+}
+
+/* 2:1 columns, vertically centered; allow overlap on the right */
+.animals__row{
+  display: grid;
+  grid-template-columns: 2.25fr 1fr;  /* left bigger */
+  align-items: center;
+  column-gap: clamp(8px, 2.5vw, 24px);
+  overflow: visible;
+  position: relative;
+}
+
+/* paper sizing & vibe */
+.animals__paper{
+  width: 150%;
+  transform: rotate(-1.5deg);
+}
+.animals__paper .paper-snip__bg{
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.18));
+}
+.animals__text{
+  font-family: "Shadows Into Light", cursive;
+  font-size: clamp(16px, 2.4vw, 28px);
+  line-height: 1.25;
+  color: #1f2d6a;
+  padding: 12% 10%;         /* keeps text off the torn edges */
+}
+
+/* animals on the right: a bit bigger, overlapping the paper */
+.animals__svg{
+  width: 120%;
+  padding-top: 119%;           /* overflow past the column */
+  max-width: 460px;
+  justify-self: end;        /* stick to the right edge */
+  transform: translateX(6%) rotate(2deg);
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.25));
+  pointer-events: none;     /* purely decorative */
+}
+
+.video{
+  position: relative;             /* anchor for the overlay */
+  width: min(92%, 900px);
+  margin: 2rem auto;
+}
+
+/* responsive video */
+.video__player{
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;           /* keeps a nice shape even before load */
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+}
+
+/* corner image overlay */
+.video__badge{
+  position: absolute;
+  top: -10px;                     /* scoot above the corner a bit */
+  right: -10px;
+  width: clamp(120px, 22%, 220px);/* scales with container */
+  height: auto;
+  z-index: 2;
+  pointer-events: none;           /* don’t block clicks on the controls */
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.25));
+}
+
+
+
 
 
 
