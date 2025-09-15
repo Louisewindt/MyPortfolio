@@ -1702,6 +1702,11 @@ transform: rotate(25deg);
   .ds-idea__paper-text{padding-bottom: 0%; width: 600px; height: 200px; padding-left: 13%; padding-top: 7%; font-size: 18px;}
   .ds-idea__sticky{width: 34%;}
   .ds-idea__sticky-text{font-size: 16px;}
+  .phone{width: 50%;}
+  .phone__gif{width: 65%; top: 31px;}
+  .UIUX-end{width: 70%;}
+
+  .morestuff__logo{width: 80%;}
 
 
 
