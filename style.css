@@ -1640,7 +1640,7 @@ transform: rotate(25deg);
   .education__image{margin-left: -10%; }
   .education__what{font-size: 16px;}
   .education__where{font-size: 14px;}
-  .education__coffeestain{top: -3.5%;}
+  .education__coffeestain{top: -4.5%;}
   .education__pentext{font-size: 16px; left: 55%; top: -3.4%;}
   .clutter{top: -3%;}
 
@@ -1660,7 +1660,7 @@ transform: rotate(25deg);
   .workexp2__sticker{left: 13%;}
   .workexp2__photo{width: 80%; transform: rotate(0deg); }
   .workexp2__link{transform: rotate(19deg); bottom: -64%; left: -300px;}
-  .workexp2__postSection{top: 6%; left: -20%;}
+  .workexp2__postSection{top: 13%; left: -20%;}
   .workexp__arrow{left: 51%; transform: rotate(326deg);margin-top: -7%;}
   .workexp2__text{ left: 48%;}
   .newspaper{top: -42%;}
