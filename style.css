@@ -1688,7 +1688,7 @@ transform: rotate(25deg);
   .socialMedia__hearts {display: block; position: absolute; top: -30%;left: 50%; transform: translateX(-50%) rotate(15deg); width: 170%; pointer-events: none; z-index: 1;}
   .socialMedia-about{width: 100%; margin-left: -23%;}
   .socialMedia-about2{width: 100%; margin-left: 23%;}
-  .socialMedia__airpods{margin-left: 0%;}
+  .socialMedia__airpods{margin-left: -25%;}
   .socialMedia-about3{margin-left: -35%; width: 100%;}
 
 
