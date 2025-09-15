@@ -1681,7 +1681,7 @@ transform: rotate(25deg);
   .socialMedia-intro{margin-left: -16%; margin-top: 0%;}
   .socialMedia__phone{width: 100%; margin-left: 5%;}
   .socialMedia__image{width: 75%; top: 100px; left: 21%;  z-index: 2;}
-  .socialMedia-bubble{top: 24%;}
+  .socialMedia-bubble{top: 18%;}
   .socialMedia-bubble__bg{width: 100%;}
   .socialMedia-bubble__text{padding-left: 35%;}
   .socialMedia__link{position: relative;}
@@ -1702,7 +1702,7 @@ transform: rotate(25deg);
   .ds-idea__paper-text{padding-bottom: 0%; width: 600px; height: 200px; padding-left: 13%; padding-top: 7%; font-size: 18px;}
   .ds-idea__sticky{width: 34%;}
   .ds-idea__sticky-text{font-size: 16px;}
-  .phone{width: 50%;}
+  .phone{width: 70%;}
   .phone__gif{width: 65%; top: 31px;}
   .UIUX-end{width: 70%;}
 
