@@ -1707,6 +1707,15 @@ transform: rotate(25deg);
   .UIUX-end{width: 70%;}
 
   .morestuff__logo{width: 80%;}
+  .paper-snip-mini{width: 50%; display: block; margin-left: auto; margin-right: auto;}
+  .morestuff-esport{display: block; margin-left: auto; margin-right: auto;}
+  .morestuff-esport__text{font-size: 18px;}
+  .insta-snip{transform: rotate(16deg); width: 70%;}
+  .insta-snip__text{transform: rotate(-7deg);}
+  .theend__logo{width: 80%; display: block; margin-left: auto; margin-right: auto;}
+  .intro__pencil{width: 400px;}
+  .intro__photo{width: 50%;}
+  
 
 
 
