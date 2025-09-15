@@ -1692,6 +1692,17 @@ transform: rotate(25deg);
   .socialMedia-about3{margin-left: -35%; width: 100%;}
   .socialMedia__instagramimage{width: 140%; margin-left: -10%;}
   .paper-snip__text{font-size: 18px;}
+  .socialMedia-about4{width: 100%; margin-left: -26%;}
+
+  .UIUX__logo{width: 80%;}
+  .ds-sticky{width: 99%; margin-top: 15%;}
+  .animals__paper{width: 120%;}
+  .animals__svg{width: 140%;}
+  .ds-idea__paper{width: 50%; justify-self: center; margin-left: -22%;}
+  .ds-idea__paper-text{padding-bottom: 0%; width: 600px; height: 200px; padding-left: 13%; padding-top: 7%; font-size: 18px;}
+  .ds-idea__sticky{width: 34%;}
+  .ds-idea__sticky-text{font-size: 16px;}
+
 
 
   .cv-paper__bg {
