@@ -1730,7 +1730,48 @@ transform: rotate(25deg);
 
 /* ------------------------------------((((1024px))))------------------------------------ */
 @media (min-width: 1024px) {
-  /* styles here */
+ .cv-paper__name{font-size: 24px; width: 200px;} 
+ .cv-paper__resume{margin-top: 5%; font-size: 18px;}
+ .cv-education{margin-top: 12%;}
+ .cv-education__title{font-size: 22px;}
+ .cv-paper__eraser{top: -3%;}
+ .programs__sticker{bottom: -40%;}
+  .programs__sticker--text{padding-top: 5%; padding-right: 0%; font-size: 18px;}
+  .programs__sticker--image{width: 130%; margin-left:-21%;} 
+.education__what{font-size: 22px;}
+.education__when{font-size: 14px;}
+.education__where{font-size: 18px;}
+.education__pentext{top: -4%; font-size: 20px;}
+.workexp__photo{}
+.workexp__text{width: 300px;}
+.workexp__company{font-size: 18px;}
+.workexp__dates{font-size: 14px;}
+.workexp__desc{font-size: 16px; width: 250px;}
+.workexp2__text{width: 300px;}
+.workexp2__company{font-size: 18px;}
+.workexp2__dates{font-size: 14px;}
+.workexp2__desc{font-size: 16px; width: 250px;}
+.workexp2__link{bottom: -80%; left: -550px;}
+.workexp2__postText{font-size: 27px; top: 110px; left: 21%;}
+.workexp__arrow{left: 28%; margin-top: 0%;}
+
+.newspaper{top: 3%; left: -300%;}
+
+.branding-intro{display: block; margin-left: 30%; margin-right: auto; padding-left: 0%;}
+.branding__sticker{right: 7%; width: 285px;}
+.branding__brandlogo{left: 82%; top: 30%; width: 400px;}
+.branding__image{width: 100%; margin-left: 27%;}
+.branding-focus{left: 55%;  transform: rotate(-16deg); margin-top: -31%;}
+.branding__stickynotes{}
+
+
+  .cv-paper__bg {
+  display: block;
+  width: 100%;
+  height: auto; 
+  max-height: 8000px;
+  margin: -10% auto;
+}
 }
 
 /* ------------------------------------((((1280px))))------------------------------------ */
