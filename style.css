@@ -1677,7 +1677,8 @@ transform: rotate(25deg);
   .signs__parkingimage{margin-top: -66%;}
   .socialMedia-intro{margin-left: -16%; margin-top: 0%;}
   .socialMedia__phone{width: 100%; margin-left: 20%;}
-  .socialMedia__image{width: 75%; top: 0%; left: 0%;}
+  .socialMedia__image{width: 75%; top: 205px; left: 0%;}
+  .socialMedia-bubble{top: 24%;}
 
 
   .cv-paper__bg {
