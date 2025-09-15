@@ -1610,7 +1610,83 @@ transform: rotate(25deg);
 
 /* ------------------------------------((((768px))))------------------------------------ */
 @media (min-width: 768px) {
-  /* styles here */
+  .about{grid-template-columns: 1fr 1fr; 
+      grid-template-areas:
+      "title title"
+      "text photo";
+    column-gap: 2rem;align-items: start; margin-top: -15%;}
+  .about__text{grid-area: text; max-width: 60ch;}
+  .about__photo{grid-area: photo; justify-self: center; width: min(95%, 360px);}
+  .about__more{display: block;}
+  .cv-paper__coffee{left: 0%; top: -136px;}
+  .cv-paper__coffeetwo{left: 42%;}
+  .cv-paper__name{font-size: 16px; left: 26%;}
+  .cv-paper__pen{left: 70%;}
+  .cv-paper__resume{top: 1.7%; font-size: 16px;}
+  .cv-resume__portrait{width: 35%; left: 60%; top: 2%;}
+  .cv-resume{left: 10%;}
+  .cv-resume__intro{font-size: 16px; width: 230px;}
+  .cv-resume__splash{left: 16%;}
+  .cv-education{margin-left:22%;}
+  .cv-paper__eraser{width: 45%; left: 65%; top: -2.5%;}
+  .cv-paper__airpods{ margin-top: -13%; }
+  .programs { margin-top: -88%;}
+  .programs__sticker--text{padding-top: 5%; padding-right: 0%; font-size: 14px;}
+  .programs__sticker--image{width: 130%; margin-left:-21%;} 
+  .programs__laptop{width: 41%; right: -15%; bottom: -100%;}
+  .education__image{margin-left: -10%; }
+  .education__what{font-size: 16px;}
+  .education__where{font-size: 14px;}
+  .education__coffeestain{top: -3.5%;}
+  .education__pentext{font-size: 16px; left: 55%; top: -3.4%;}
+  .clutter{top: -3%;}
+
+  .workexp{top: -4%;}
+  .workexp__bg{width: 145%; margin-left: -70%;}
+  .workexp__stamp{top: 21%; right: 49%;}
+  .workexp__brand{top: 35%; right: 46%;}
+  .workexp__photo{width: 37%; bottom: 9%; left: 0%;}
+  .workexp__pen{width: 34%; bottom: -43%; right: -15%;}
+  .workexp__title{margin-top: 6%; margin-left: -6%; }
+  .workexp__highlight{left: 47%;}
+  .workexp2{top: -4.85%; }
+  .workexp2__bg{width: 140%;}
+  .workexp2__text{margin-left: -25%;}
+  .workexp2__title{margin-top: 6%; margin-left: -36%; }
+  .workexp2__highlight{left: 32%; }
+  .workexp2__sticker{left: 13%;}
+  .workexp2__photo{width: 80%; transform: rotate(0deg); }
+  .workexp2__link{transform: rotate(19deg); bottom: -64%; left: -300px;}
+  .workexp2__postSection{top: 6%; left: -20%;}
+  .workexp__arrow{left: 51%; transform: rotate(326deg);margin-top: -7%;}
+  .workexp2__text{ left: 48%;}
+  .newspaper{top: -42%;}
+
+  .paper-snip{width: 60%;}
+  .branding-intro{left: -6%;}
+  .branding__sticker{right: 0%; width: 225px;}
+  .branding-focus{left: 2%;}
+  .branding__stickynotes{width: 80%; display: block; margin-left: auto; margin-right: auto;}
+
+  .signs{margin: -20% auto 5rem;}
+  .signs__logo{width: 70%;}
+  .signs-intro{margin-top: 0%;}
+  .signs-bus{margin-left: 6%; margin-top: 0%;}
+  .signs__stack{margin-top: -17%;}
+  .signs-parking{margin-left: -11%; }
+  .signs__parkingimage{margin-top: -66%;}
+  .socialMedia-intro{margin-left: -16%; margin-top: 0%;}
+  .socialMedia__phone{width: 100%; margin-left: 20%;}
+  .socialMedia__image{width: 75%; top: 0%; left: 0%;}
+
+
+  .cv-paper__bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 6000px; /* adjust this number */
+  margin: -10% auto;
+}
 }
 
 /* ------------------------------------((((1024px))))------------------------------------ */
