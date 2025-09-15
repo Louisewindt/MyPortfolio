@@ -45,7 +45,7 @@ body {
 .cv-paper__logo{
 position: absolute;
   width: min(35%, 45%);
-    top: 1.5%;
+    top: 0.5%;
     left: 33%;
 }
 .cv-paper__coffee{
@@ -57,20 +57,20 @@ position: absolute;
 .cv-paper__sparepaper{
     position: absolute;
     width: 50%;
-    top: -1%;
-    right: -15%;
+    top: 0%;
+    right: -8%;
     
 }
 .cv-paper__pen{
     position: absolute;
     width: 30%;
-    top: 2%;
+    top: 1%;
     left: 70%;
 }
 .cv-paper__stamp{
     position: absolute;
     width: 17%;
-    top: 2.8%;
+    top: 1%;
     left: 8%;
     transform: rotate(-18deg);
 }
@@ -84,13 +84,13 @@ position: absolute;
     line-height: normal;
     width: 100px;
     transform: rotate(-15.315deg);
-    top: 1%;
+    top: 0.3%;
     left: 17%;
 }
 
 .cv-paper__resume{
   position: absolute;
-  top: 6%;       /* halfway down the parent */
+  top: 1.5%;       /* halfway down the parent */
   left: 50%;      /* halfway across the parent */
   transform: translate(-50%, -50%); /* pull back by half its own size */
   
@@ -103,7 +103,7 @@ position: absolute;
 
 .cv-resume{
     position: relative;
-    top: 7%;
+    top: 2%;
     left: 4%;
 }
 .cv-resume__h1{
@@ -153,14 +153,14 @@ position: absolute;
 .cv-resume__portrait{
     width: 45%;
     position: absolute;
-    top: 8%;
+    top: 2.5%;
     left: 64%;
     transform: rotate(15.315deg);
 }
 
 .cv-education {
 position: relative;
-top: 7%;
+top: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -446,7 +446,7 @@ transform: rotate(-15deg);
 }
 .education__pentext{
 position: relative;
-    top: -11%;
+    top: -3%;
     left: 49%;
     transform: rotate(-7.887deg);
     color: #131596;
@@ -469,7 +469,7 @@ position: relative;
   width: min(92%, 900px);
   margin: 4rem auto;
   transform: rotate(13.22deg); /* tilt the whole book section */
-  top: -14%;
+  top: -4%;
 }
 
 .workexp__bg {
@@ -566,13 +566,13 @@ position: relative;
   width: 82%;
   position: relative;
   z-index: 2;
-  top: -8%;
+  top: -2%;
   left: 47%;
 }
 .clutter{
   width: 65%;
   position: relative;
-  top: -11%;
+  top: -3%;
   left: 52%;
 }
 /* ===== Work Experience #2 (mirrored) ===== */
@@ -581,7 +581,7 @@ position: relative;
   width: min(92%, 900px);
   margin: 4rem auto;
   transform: rotate(-13.22deg); /* opposite tilt */
-  top: -16%;
+  top: -5%;
     left: 14%;
 }
 
@@ -689,11 +689,11 @@ position: relative;
 }
 .newspaper {
   position: relative;
-  width: 111%;
+  width: 90%;
   margin: 4rem 0 0; /* space above if needed */
   z-index: 5;       /* above the board background */
-  left: -259%;
-    top: -87%;
+    left: -226%;
+    top: -150%;
   transform: rotate(22.935deg);
 
 }
@@ -710,7 +710,7 @@ position: relative;
 .branding{
   position: relative;
   width: min(92%, 900px);
-  margin: 7rem auto 5rem;
+  margin: 12rem auto 5rem;
 }
 
 /* title image centered */
@@ -1027,16 +1027,16 @@ position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: start;
-  margin-left: -14%;
+  gap: 1%;
 }
-
 
 /* sticky note with text overlay */
 .ds-sticky{ 
   position: relative; 
   margin: 0;
-  width: 90%;
+  width: 220%;
   transform: rotate(-19deg); 
+  margin-left: 0%;
 }
 .ds-sticky__img{ display: block; width: 100%; height: auto; }
 .ds-sticky__text{
@@ -1044,7 +1044,7 @@ position: relative;
   inset: 0;
   display: grid;
   place-items: center;
-  padding: 18% 12%;
+  padding: 18% 2%;
   padding-top: 62%;
   margin: 0;
   text-align: center;
@@ -1146,7 +1146,336 @@ position: relative;
   filter: drop-shadow(0 4px 10px rgba(0,0,0,.25));
 }
 
+.UIUX__sticker{
+  display: block;     /* make sure it behaves as a block */
+  width: 75%;
+  margin: 0 auto;     /* centers it horizontally */
+}
+/* wrapper */
+.ds-idea{
+  position: relative;
+  width: min(92%, 1100px);
 
+}
+/* OVERRIDE just for the DS note */
+.ds .ds-snip.paper-snip{
+  width: clamp(218px, 48vw, 820px);  /* make it larger and responsive */
+  max-width: none;                   /* remove the 560px cap */
+  margin-left: 20%;
+}
+
+
+/* big paper */
+.ds-snip{
+  width: 150%;
+}
+
+.ds-idea__paper-bg{
+  display:block; 
+    margin-left: -25%;
+  width:200%; 
+  height:auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.18));
+}
+.ds-idea__paper-text{
+  position:absolute; inset:0;
+  display:grid; place-items:center;
+  padding-bottom: 67%;
+  padding-top: 0%;
+  padding-left: 5%;
+  font-family: "Shadows Into Light", cursive;
+  font-size: clamp(14px, 1.8vw, 22px);
+  line-height: 1.5;
+  color:#23336a;
+  text-align:left;
+}
+
+
+/* row below (sticky + bulb) */
+.ds-idea__row{
+  display:flex; align-items:flex-start; gap: clamp(16px, 4vw, 40px);
+}
+
+/* sticky note with text */
+.ds-idea__sticky{ position:relative; width:min(60%, 420px); transform: rotate(-7deg); }
+.ds-idea__sticky-bg{
+  display:block; width:125%; height:auto;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.22));
+}
+.ds-idea__sticky-text{
+  position:absolute;
+  top:18%; right:12%; bottom:18%; left:12%;
+  margin:0;
+  font-family:"Special Elite", cursive;
+  font-size: clamp(12px, 1.6vw, 18px);
+  width: 100%;
+  line-height:1.35;
+  color:#000;
+}
+
+/* lightbulb sticker */
+.ds-idea__bulb{
+  width: clamp(120px, 22vw, 260px);
+  height:auto;
+  transform: rotate(6deg);
+  align-self:center;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.2));
+  pointer-events:none; /* decorative */
+}
+
+.phone{
+  position: relative;
+  width: clamp(255px, 45%, 360px);   /* scales responsively */
+  margin: 2rem auto;                 /* centers it on page */
+  transform: rotate(-5deg);          /* tilt the whole phone */
+}
+
+/* gif sits behind */
+.phone__gif{
+    position: relative;
+    top: 9px;
+    border-radius: 30px;
+    display: block;
+    width: 67%;
+    margin: 0 auto;                  /* center inside container */
+}
+
+/* frame sits on top */
+.phone__frame{
+  position:absolute;
+  inset:0;                           /* cover full section */
+  width:101%;
+  height:auto;
+  pointer-events:none;                /* only decoration */
+}
+
+.UIUX-end {
+  position: relative;
+  width: 110%;          /* your number */
+  max-width: 800px;     /* optional cap */
+  left: 50%;            /* push halfway across */
+  transform: translateX(-50%); /* pull back half its own width */
+}
+
+.UIUX-end__bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.UIUX-end__text {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 12% 10%;
+  margin: 0;
+  text-align: left;
+  font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.4;
+}
+
+.UIUX-end__text a {
+  color: #131596;   /* link color */
+  text-decoration: underline;
+    margin-bottom: 4%;
+}
+
+.morestuff{
+
+}
+
+.morestuff__logo{
+  width: 100%;
+}
+
+.morestuff-esport__text{
+  font-size: 16px;
+}
+
+.morestuff-esport__logo{
+  width: 100%;
+}
+
+.morestuff-oasis__logo{
+  width: 75%;
+    transform: translateX(25%); /* pull back half its own width */
+}
+
+.morestuff-gravityTower__logo{
+  width: 100%;
+}
+
+.morestuff-spacespinner__logo{
+  width: 100%;
+}
+
+
+.paper-snip-mini{
+  position: relative;
+  width: min(95%, 680px);
+    font-family: "Shadows Into Light", cursive;
+}
+.paper-snip-mini__bg{
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.18));
+}
+
+.paper-snip-mini__text{
+  position: absolute;
+  inset: 0;                 /* fill the paper area */
+  display: grid;
+  place-items: center;      /* easy center */
+  padding: 16% 12%;         /* breathe inside the “paper” */
+  margin: 0;
+  text-align: left;         /* looks handwritten */
+  font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.35;
+  color: #131596;
+
+}
+/* container */
+.nt{
+  width: min(92%, 950px);
+  margin: 3rem auto;
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* top image */
+.nt__hero{
+  display:block;
+  width:100%;
+  height:auto;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.18));
+  margin-bottom: 1.5rem;
+  transform: rotate(-3deg);
+}
+
+/* two-up row */
+.nt__row{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;   /* polaroid a bit larger */
+  gap: clamp(14px, 3vw, 28px);
+  align-items:start;
+}
+
+/* -------- Polaroid component -------- */
+.nt__polaroid{
+  width: 100%;
+  transform: rotate(-10deg);
+}
+
+/* -------- Paper snip (reuse your base) -------- */
+.paper-snip{
+  position:relative;
+  width:min(100%, 560px);
+}
+.paper-snip__bg{
+  display:block; width:100%; height:auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.18));
+}
+.paper-snip__text{
+  position:absolute; inset:0;
+  display:grid; place-items:center;
+  padding: 14% 12%;
+  margin:0;
+  text-align:left;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height:1.35;
+  color:#23336a;
+}
+/* small variant for this layout */
+.paper-snip--sm{ 
+  transform: rotate(-6deg);
+  width: 85%;                   /* ~10–15% smaller than usual */
+}
+
+.nt-snip{
+  position: relative;
+  width: 200%;
+  left: -65%;
+}
+.insta-snip{
+position: relative;
+top: -102px;
+transform: rotate(25deg);
+}
+.insta-snip__text{
+    font-family: "Shadows Into Light", cursive;
+}
+.intro {
+  display: flex;
+  justify-content: space-between; /* spread items apart */
+  align-items: center;            /* align vertically */
+  width: min(92%, 900px);
+  margin: 2rem auto;
+  margin-top: 0%;
+}
+
+/* pencil */
+.intro__pencil {
+  width: clamp(200px, 25%, 220px);
+  transform: rotate(-8deg); /* optional tilt */
+  margin-left: -20%;
+}
+
+/* photo */
+.intro__photo {
+  width: clamp(200px, 35%, 280px);
+  transform: rotate(5deg);  /* optional tilt */
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.25));
+}
+
+.theend__logo{
+  width: 100%;
+}
+
+.theend__book {
+  position: relative;       /* anchor for absolute text */
+  width: min(90%, 700px);   /* scale the book */
+  margin: 0 auto;           /* center it */
+}
+
+.theend__endbook {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.theend__content {
+  position: absolute;
+  top: 20%;          /* adjust so text sits inside the book */
+    top: 26%;
+    left: 35%;
+  color: #000;
+  font-family: "Special Elite", cursive;
+  transform: rotate(22deg);
+}
+
+.theend__title {
+  margin-bottom: 1rem;
+  font-size: clamp(16px, 2vw, 22px);
+}
+
+.contact p {
+  margin: 0.3rem 0;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #23336a;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+.theend__endbook{
+  width: 150%;
+  margin-left: -10%;
+  margin-bottom: -13%;
+}
 
 
 
@@ -1179,527 +1508,3 @@ position: relative;
 
 
 /* ------------------------------------MEDIA QUERIES------------------------------------ */
-
-/* fine-tune placement around laptop widths */
-@media (max-width: 1200px) {
-  .cv-paper__sparepaper {
-    right: -10px;  /* scoot it a bit off the edge */
-    top: -1px;      /* nudge it down */
-  }
-}
-
-/* ------------------------------------MEDIA QUERY 450px------------------------------------ */
-
-@media (min-width: 450px) {
-    .education__coffeestain{
-    top: -13%;
-    left: -7%;
-    }
-    .programs__sticker{
-    right: -7%;
-    bottom: -10%;
-    }
-    .programs__laptop{
-        right: -10%;
-        bottom: -55%;
-
-    }
-    .programs{
-        margin-top: -16%;
-    }
-    .cv-paper__airpods{
-        width: 80%;
-        left: -25%;
-    }
-    .cv-paper__resume{
-      top: 5.5%;
-    }
-    .cv-paper__name{
-    top: 0.2%;
-    left: 15%;
-    font-size: 20px;
-    width: 200px;
-  }
-  .cv-resume__splash{
-    position: absolute;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    top: 5%;
-    left: 29%;
-    transform: rotate(-15.315deg);
-    color: #131596;
-}
-.cv-resume__h1{
-    font-family: "Special Elite", cursive;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: normal;
-    width: 200px;
-}
-    .cv-resume__portrait{
-    left: 60%;
-}
-
-.workexp__text{
-  margin-left: 12%;
-}
-.workexp__desc {
-    font-size: 14px;
-}
-.workexp__dates {
-    margin-bottom: 5%;
-    font-size: 10px;
-}
-.workexp__photo{
-  bottom: 3%;
-}
-.workexp2__desc{ font-size: 14px; }
-}
-
-/* ------------------------------------MEDIA QUERY 620px------------------------------------ */
-
-@media (min-width: 620px) {
-.about{
- margin-top: -20%;
-}
-.programs{
-  margin-top: -3%;
-}
-.programs__sticker{
-    right: -7%;
-    bottom: -42%;
-    width: 45%;
-}
-    .programs__sticker--image{
-    width: 100%;
-    }
-.programs__sticker--text{
-    font-size: 18px;
-    padding-top: 15%;
-    width: 150px;
-    height: 50px;
-    padding-right: 0%;
-    padding-left: 10%;
-}
-.programs__laptop{
-  width: 40%;
-  right: -11%;
-  bottom: -108%;
-}
-.cv-paper__airpods{
-    width: 69%;
-     margin-top: -39%;
-}
-.cv-education{
-    top: 8%;
-}
-.cv-resume__h1{
-    font-size: 42px;
-    width: 400px;
-}
-.cv-resume__splash{
-    font-size: 24px;
-    top: 4%;
-    left: 31%;
-}
-.cv-resume__email{
-    font-size: 20px;
-}
-.cv-resume__intro{
-    font-size: 24px;
-    width: 300px;
-}
-.cv-education__title{
-    font-size: 24px;
-    width: 200px;
-}
-.cv-education p,
-.cv-education a {
-    font-size: 18px;
-}
-.cv-education__flag{
-    width: 5%;
-}
-.cv-education__icon{
-    width: 8.5%;
-}
-.education__pentext{
-  font-size: 16px;
-  top: -12.5%;
-  left: 56%;
-}
-.education__text{
-  font-size: 14px;
-}
-.workexp{
-  top: -12.5%;
-}
-.workexp__pen {
-    position: absolute;
-    bottom: -32%;
-    right: -21%;
-    width: 39%;
-}
-.workexp__bg {
-    display: block;
-    width: 164%;
-    height: auto;
-    margin-left: -61%;
-}
-.workexp__highlight{
-  width: 67%;
-}
-    .workexp__text {
-        margin-left: 21%;
-    }
-.workexp__stamp{
-  right: 24%;
-}
-.workexp__brand{
-  top: 26%;
-    right: 24%;
-    width: 22%;
-}
-.workexp__photo{
-  bottom: 10%;
-  width: 45%;
-}
-  .workexp2{ margin-top: 2rem; }
-  .workexp2__bg{ width: 164%; margin-left: -61%; }
-  .workexp2__highlight{ width: 67%; }
-  .workexp2__sticker{ left: 24%; }
-  .workexp2__photo{ width: 45%; }
-  .workexp2__pen{ bottom: -32%; left: -6%; width: 39%; }
-}
-
-/* ------------------------------------MEDIA QUERY 768px------------------------------------ */
-
-@media (min-width:768px){
-.workexp{
-  top: -15.5%;
-}
-.workexp__pen{
-  bottom: -50%;
-}
-.workexp__stamp {
-  right: 25%;
-}
-.workexp__brand{
- right: 24%;
-}
-.workexp__title{
-  font-size: 23px;
-}
-.workexp__titlewrap{
-  left: 5%;
-}
-.workexp__bg{
-  width: 164%;
-}
-.cv-paper__eraser{
-  width: 50%;
-  top: -5%;
-  left: 60%;
-}
-.programs{
-  margin-top: -41%;
-}
-.programs__sticker{
-  bottom: -50%;
-}
-.clutter{
-  top: -12%;
-}
-  .workexp2{ margin-top: 3rem; }
-  .workexp2__pen{ bottom: -50%; }
-  .workexp2__title{ font-size: 23px; }
-  .workexp2__titlewrap{ right: 5%; } /* slight mirror nudge */
-}
-
-/* ------------------------------------MEDIA QUERY 1000px------------------------------------ */
-
-@media (min-width: 1000px) {
-    .education{
-        margin-top: 35%;
-        margin-left: 5%;
-    }
-    .education__coffeestain{
-        top: -12%;
-    }
-    .education__text{
-        font-size: x-large;
-    }
-    .education__image{
-        margin-left: -25%;
-    }
-    .cv-paper__airpods{
-        width: 60%;
-        margin-top: -20%;
-    }
-    .programs__sticker{
-    right: 0%;
-    bottom: -60%;
-    }
-    .programs__laptop{
-        width: 35%;
-        bottom: -100%;
-        right: -10%;
-    }
-    .programs__sticker--text{
-    font-size: 24px;
-    padding-top: 10%;
-    padding-right: 5%;
-    width: 200px;
-    }
-    .cv-paper__name{
-    top: 1%;
-    left: 26%;
-    font-size: 28px;
-    width: 200px;
-  }
-    .cv-resume__splash{
-    position: absolute;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    top: -0.5%;
-    left: 21%;
-    transform: rotate(-15.315deg);
-    color: #131596;
-}
-.cv-resume__intro{
-    font-family: "Shadows Into Light", cursive;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: normal;
-    width: 500px;
-        color: #131596;
-}
-.cv-resume__h1{
-    font-family: "Special Elite", cursive;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: normal;
-    width: 400px;
-}
-.cv-resume__email{
-    font-family: "Special Elite", cursive;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: normal;
-    width: 400px;
-}
-
-.cv-education__title{
-    font-size: 32px;
-    width: 400px;
-}
-.cv-education p,
-.cv-education a {
-    font-size: 24px;
-}
-
-    .cv-resume__portrait{
-    left: 60%;
-    top: 7%;
-}
-  .about{
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "title title"
-      "text  photo";
-    column-gap: 2.5rem;
-    row-gap: 1.5rem;
-  }
-    .about__title-wrap{
-    grid-column: 1 / -1;   /* spans the entire row */
-    width: 80%;
-    justify-self: center; /* keep it centered */
-  }
-  .about__text{ justify-self:start; }
-  .about__photo{ justify-self:end; width:min(100%,520px); }
-  .about__more{ display:block; }
-
-.workexp__bg {
-width: 135%;
-}
-.workexp {
-top: -11%;
-}
-.workexp__titlewrap {
-  left: -22%;
-}
-.workexp__text {
-margin-left: 0%;
-width: 200px;
-}
-.workexp__company{
-  font-size: 16px;
-
-}
-.workexp__desc{
-  width: 200px;
-  font-size: 16px;
-}
-.workexp__photo {      
-bottom: 6%;
-width: 36%;
-left: 0%;
-}
-.workexp__brand {
-right: 47%;
-top: 43%;
-}
-.workexp__stamp {
-right: 46%;
-top: 23%;
-}
-.workexp__pen {
-bottom: -50%;
-width: 50%;
-}
-  .workexp2{ margin-top: 4rem; }
-  .workexp2__bg{ width: 135%; }
-  .workexp2__titlewrap{ right: -22%; }
-  .workexp2__text{ width: 220px; }
-  .workexp2__desc{ width: 220px; font-size: 16px; }
-  .workexp2__photo{ bottom: 6%; width: 36%; right: 0%; }
-  .workexp2__sticker{ left: 12%; top: 28%; }
-  .workexp2__pen{ bottom: -50%; width: 44%; left: -10%; }
-}
-
-/* ------------------------------------MEDIA QUERY 1200px------------------------------------ */
-
-@media (min-width:1200px){
-    .about{
- margin-top: 50%;
-}
-    .cv-paper__airpods{
-        width: 55%;
-        margin-top: -15%;
-    }
-    .cv-education{
-        top: 8%;
-    }
-    .cv-resume__portrait{
-    left: 50%;
-    top: 6%;
-}
-.cv-resume__splash{
-    top: 1%;
-    left: 18%;
-    
-}
-    .programs__sticker{
-    right: -5%;
-    bottom: -65%;
-    width: 40%;
-    }
-    .programs__laptop{
-        width: 40%;
-        bottom: -125%;
-        right: -13%;
-    }
-    .programs__sticker--text{
-    font-size: 22px;
-    padding-top: 14%;
-    padding-left: 20%;
-    }
-}
-
-/* ------------------------------------MEDIA QUERY 1600px------------------------------------ */
-
-@media (min-width: 1600px) {
-    .cv-paper__airpods{
-        width: 55%;
-        margin-top: -7%;
-    }
-
-    .cv-resume{
-    left: 11%;
-    }
-  .cv-paper__sparepaper {
-    right: -15%;
-    top: -0.5%;
-  }
-    .cv-paper__name{
-    top: 1%;
-    left: 26%;
-    font-size: 32px;
-    width: 300px;
-  }
-      .cv-resume__splash{
-    position: absolute;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 42px;
-    top: -5%;
-    left: 11%;
-    transform: rotate(-15.315deg);
-    color: #131596;
-}
-.cv-resume__portrait{
-    left: 60%;
-    top: 6%;
-    width: 37%;
-}
-
-.cv-resume__intro{
-    font-family: "Shadows Into Light", cursive;
-    font-size: 42px;
-    font-weight: 400;
-    line-height: normal;
-    width: 700px;
-        color: #131596;
-}
-.cv-resume__h1{
-    font-family: "Special Elite", cursive;
-    font-size: 46px;
-    font-weight: 400;
-    line-height: normal;
-    width: 400px;
-}
-.cv-resume__email{
-    font-family: "Special Elite", cursive;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: normal;
-    width: 400px;
-}
-
-.cv-paper__resume{
-    font-size: 32px;
-}
-.cv-paper__name{
-    font-size: 42px;
-}
-.cv-education__title{
-    font-size: 42px;
-    width: 600px;
-}
-.cv-education p,
-.cv-education a {
-    font-size: 32px;
-}
-.cv-education__flag{
-    width: 5%;
-}
-.cv-education__icon{
-    width: 8.5%;
-}
-.cv-education{
-    left: 13%;
-}
-.cv-paper__aboutme{
-    top: -3%;
-}
-.cv-paper__aboutme--about{
-    margin-top: -22%;
-    font-size: 28px;
-}
-}
-
