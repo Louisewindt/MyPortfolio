@@ -564,11 +564,7 @@ position: relative;
     transform: rotate(-18deg);
 }
 .cv-paper__eraser{
-  width: 82%;
-  position: relative;
-  z-index: 2;
-  top: -2%;
-  left: 47%;
+display: none;
 }
 .clutter{
   width: 65%;
@@ -1490,6 +1486,9 @@ transform: rotate(25deg);
   position: relative;
   z-index: 10;
 }
+.cv-resume__intro--more {
+  display: none;
+}
 
 
 
@@ -1815,7 +1814,22 @@ transform: rotate(25deg);
 
 /* ------------------------------------((((1280px))))------------------------------------ */
 @media (min-width: 1280px) {
-  /* styles here */
+  .cv-paper__logo{width: 32%; left: 34%;}
+  .cv-paper__pen{width: 15%; left: 86%;}
+  .cv-paper__sparepaper{width: 35%;}
+  .cv-paper__stamp{width: 13%; left: 3%;}
+  .cv-paper__resume{font-size: 25px;}
+  .cv-resume{left: 15%; margin-top: 7%;}
+  .cv-resume__portrait{top: 2.3%; width: 30%;}
+  .cv-resume__h1{font-size: 32px;}
+  .cv-resume__email{font-size: 18px;}
+  .cv-resume__intro--more {display: inline;}
+  .cv-resume__intro{width: 414px;}
+  .cv-resume{position: relative;}
+  .cv-resume__splash{left: 12%; top: 0%; font-size: 20px;}
+
+  .cv-education{margin-top: 0%;}
+  .cv-education__title {font-size: 32px;}
 }
 
 /* ------------------------------------((((1440px))))------------------------------------ */
