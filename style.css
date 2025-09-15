@@ -1731,7 +1731,8 @@ transform: rotate(25deg);
 /* ------------------------------------((((1024px))))------------------------------------ */
 @media (min-width: 1024px) {
  .cv-paper__name{font-size: 24px; width: 200px;} 
- .cv-paper__resume{margin-top: 5%; font-size: 18px;}
+ .cv-paper__resume{margin-top: 10%; font-size: 18px;}
+  .cv-resume__intro{font-size: 24px; width: 245px; }
  .cv-education{margin-top: 12%;}
  .cv-education__title{font-size: 22px;}
  .cv-paper__eraser{top: -3%;}
@@ -1741,8 +1742,10 @@ transform: rotate(25deg);
 .education__what{font-size: 22px;}
 .education__when{font-size: 14px;}
 .education__where{font-size: 18px;}
-.education__pentext{top: -4%; font-size: 20px;}
+.education__pentext{top: -4.8%; font-size: 20px;}
 .workexp__photo{}
+.clutter{top: -4%;}
+.workexp__pen{right: -20%;}
 .workexp__text{width: 300px;}
 .workexp__company{font-size: 18px;}
 .workexp__dates{font-size: 14px;}
@@ -1755,15 +1758,51 @@ transform: rotate(25deg);
 .workexp2__postText{font-size: 27px; top: 110px; left: 21%;}
 .workexp__arrow{left: 28%; margin-top: 0%;}
 
-.newspaper{top: 3%; left: -300%;}
+.newspaper{top: -60%; left: -250%;}
 
 .branding-intro{display: block; margin-left: 30%; margin-right: auto; padding-left: 0%;}
 .branding__sticker{right: 7%; width: 285px;}
 .branding__brandlogo{left: 82%; top: 30%; width: 400px;}
 .branding__image{width: 100%; margin-left: 27%;}
 .branding-focus{left: 55%;  transform: rotate(-16deg); margin-top: -31%;}
-.branding__stickynotes{}
+.branding__stickynotes{display: inline; top: -268px; left: -8%; width: 75%;}
 
+.signs__image{width: 120%; display: block; margin-left: -9%; margin-right: auto;}
+.signs-bus{ margin-left: 66%; margin-top: -28%;}
+.signs__busimage{    transform: rotate(5deg); left: -10%;}
+.signs__buscard{right: -15%; top: 14%;}
+.signs-parking{margin-left: -6%;}
+.signs__parkingimage{width: 85%; margin-left: 28%; margin-top: -44%;}
+.socialMedia__phone{margin-left: 30%;transform: rotate(4.387deg);}
+.socialMedia-intro{width: 100%; position: relative ; top: 114px; left: -39%;}
+.socialMedia__link{top: 0px; left: -25%;}
+.socialMedia-bubble{top: 21%; left: 7%;}
+.socialMedia-about{margin-left: -32%; top: -520px; transform: rotate(8.387deg);}
+.socialMedia-about2{margin-left: 0%; top: -528px; left: -45%; margin-bottom: -90%;}
+.socialMedia__airpods{margin-left: -100%;}
+.socialMedia-about3{margin-bottom: -83%; top: -400px; left: 83%;}
+.socialMedia__instagramimage{width: 110%; margin-left: -95%;}
+.socialMedia-about4{margin-left: 42%; top: -555px; margin-bottom: 0%;}
+.UIUX__logo{margin-top: -22%;}
+.ds-idea__paper{width: 45%;}
+.ds-idea__paper-text{padding-top: 7%; padding-left: 21%;}
+.phone{width: 50%;}
+.morestuff__logo{width: 50%;}
+.UIUX__logo{width: 50%;}
+.morestuff-esport__logo{width: 50%;}
+.morestuff-oasis__logo{width: 35%; display: block; margin-left: 26%; margin-right: auto;}
+.morestuff-gravityTower__logo{width: 35%; display: block; margin-left: auto; margin-right: auto;}
+.morestuff-spacespinner__logo{width: 35%; }
+.nt__hero{width: 50%; display: block; margin-left: auto; margin-right: auto;}
+.nt__polaroid{width: 60%; margin-left: 15%;}
+.nt-snip{width: 120%; left: -30%;}
+.Instagram__phone{width: 50%; margin-top: -26%;}
+.insta-snip{width: 60%; position: relative; top: -200px; left: 6%; margin-top: -40%;}
+.intro__photo{display: none;}
+.intro__pencil{top: -300px; left: 0%; position: relative;}
+.theend__logo{width: 50%;}
+.theend__book{width: 60%; margin-left: 1%; margin-bottom: -26%;}
+.contact{font-size: 18px;}
 
   .cv-paper__bg {
   display: block;
