@@ -11,10 +11,11 @@
 
 body {
   margin: 0;
-  background-image: url("images/Board.png"); 
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position: center;
+  background-color: #b88352;                 /* warm fallback */
+  background-image: url("images/Board.png"); /* use your PNG */
+  background-repeat: repeat;                 /* repeat both axes */
+  background-position: top center;
+  background-size: 512px auto;               /* scale DOWN for sharpness */
   overflow-x: clip;
 }
 /* PAPER SECTION */
@@ -724,16 +725,12 @@ position: relative;
 .branding-intro{
   left: -12%;
 }
-.paper-snip{
-  position: relative;
-  width: min(95%, 680px);
-    font-family: "Shadows Into Light", cursive;
-}
 .paper-snip__bg{
   display: block;
   width: 100%;
   height: auto;
   filter: drop-shadow(0 4px 10px rgba(0,0,0,.18));
+
 }
 
 .paper-snip__text{
@@ -1128,7 +1125,6 @@ position: relative;
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;           /* keeps a nice shape even before load */
   object-fit: cover;
   border-radius: 14px;
   box-shadow: 0 10px 24px rgba(0,0,0,.22);
@@ -1371,6 +1367,7 @@ position: relative;
 .paper-snip{
   position:relative;
   width:min(100%, 560px);
+    font-family: "Shadows Into Light", cursive;
 }
 .paper-snip__bg{
   display:block; width:100%; height:auto;
@@ -1476,7 +1473,20 @@ transform: rotate(25deg);
   margin-left: -10%;
   margin-bottom: -13%;
 }
-
+.video__cta {
+  display: flex;
+  justify-content: center;   /* center child horizontally */
+  margin: 1rem 0 2rem;       /* space above/below */
+  position: relative;
+  z-index: 10;
+}
+.gif__cta{
+    display: flex;
+  justify-content: center;   /* center child horizontally */
+  margin: 1rem 0 2rem;       /* space above/below */
+  position: relative;
+  z-index: 10;
+}
 
 
 
@@ -1508,3 +1518,117 @@ transform: rotate(25deg);
 
 
 /* ------------------------------------MEDIA QUERIES------------------------------------ */
+
+/* ------------------------------------((((375px))))------------------------------------ */
+@media (min-width: 375px) {
+   /* Paper header: tame overlaps a bit */
+  .cv-paper__logo { width: 40%; left: 30%; }
+  .cv-paper__pen { width: 34%; left: 66%; }
+  .cv-resume { left: 6%; }
+  .cv-resume__portrait { width: 50%; left: 60%; }
+
+  /* About: keep photo a touch smaller */
+  .about__photo { width: min(84%, 300px); }
+
+  /* Programs: pull stickers closer */
+  .programs { margin-top: -80%; }
+  .programs__sticker { right: -4%; bottom: -32%; }
+  .programs__laptop { right: -10%; bottom: -95%; }
+  .cv-education{top: 2.3%;}
+  .about{margin: 0rem auto;}
+  .workexp2__postText{top: 55px;}
+  .workexp__arrow{top: 45px;}
+  .newspaper{top: -122%;}
+}
+
+/* ------------------------------------((((480px))))------------------------------------ */
+@media (min-width: 480px) {
+  /* Paper header */
+  .cv-paper__logo { width: 38%; left: 31%; }
+  .cv-paper__pen { width: 32%; left: 67%; }
+  .cv-resume { left: 7%; }
+  .cv-resume__portrait { width: 46%; left: 55%; top: 2%;}
+  .cv-paper__airpods{ margin-top: -38%}
+  .clutter{top: -2.5%; left: 39%;}
+  .workexp{top: -2.6%;}
+  .workexp__bg{width: 170%;}
+  .workexp__text{margin-left: -7%;}
+  .workexp__titlewrap{margin-left: -40%;}
+  .workexp__highlight{width: 50%;}
+  .workexp__stamp{top: 21%; right: 41%;}
+  .workexp__brand{top: 30%; right: 34%;}
+  .workexp__photo{width: 42%; bottom: 16%;}
+
+  .workexp2__bg{width: 170%;}
+  .workexp2{left: 35%; top: -3%;}
+  .workexp2__titlewrap{margin-left: -40%;}
+  .workexp2__highlight{width: 50%;}
+  .workexp2__text{margin-left: -5%;}
+  .workexp2__sticker{top: 16%; left: 43%;}
+  .workexp2__link{bottom: -51%; left: -280px; transform: rotate(-23deg); width: 95%;}
+  .workexp2__postSection{position: relative; top: 61%; left: -53%;}
+  .workexp2__postText{font-size: 18px; width: 120px;}
+  .workexp__arrow{left: 18%; transform: rotate(78deg); margin-top: -20%;}
+
+  .newspaper{left: -279%; top: -74%;}
+
+  .branding__logo{width: 80%;}
+  .paper-snip{ width: min(77%, 560px);}
+  .branding__sticker{right: -4%; }
+  .branding__image{width: 120%; display: block; margin-left: 50%; transform: translate(-50%) rotate(-3deg);}
+  .branding__stickynotes{width: 100%; left: 0%;}
+
+  .signs__logo{ width: 80%;}
+  .signs__stack{ width: 100%; margin-left: -5%; margin-bottom: 5%;}
+  .signs__parkingimage{ width: 120%; margin-left: 0%; margin-top: -69%;}
+
+  .socialMedia__logo{ width: 80%; margin-top: 0%; }
+  .socialMedia-bubble{ top: 19%;}
+  .socialMedia-bubble__bg{ width: 85%; margin-left: 12%; margin-bottom: -4%; }
+  .socialMedia-bubble__text{padding-left: 20%;}
+  .socialMedia__phone{ max-width: none; width: 80%;}
+  .socialMedia__image{ width: 85%; top: 90px;}
+  .socialMedia__airpods{width: 120%;  margin-top: -19%;}
+  .socialMedia__instagramimage{width: 100%; margin-left: 5%;}
+
+  .ds-sticky{width: 125%; margin-bottom: 10%;}
+  .ds-snip{margin-left: 0%;}
+  .ds__row{margin-top: -24%;}
+
+  .UIUX__logo{width: 80%; display: block; margin-left: auto; margin-right: auto;}
+  .video__badge{width: 165px;}
+  .ds-idea__paper-text{padding-bottom: 70%;}
+  .ds-idea__sticky{width: 40%; margin-left: 20%;}
+
+  .morestuff__logo{width: 80%; display: block; margin-left: auto; margin-right: auto;}
+  .morestuff-esport__logo{width: 80%; display: block; margin-left: auto; margin-right: auto;}
+  .morestuff-oasis__logo{width: 70%; display: block;}
+  .morestuff-spacespinner__logo{width: 80%; display: block; margin-left: auto; margin-right: auto;}
+  .intro__pencil{width: 230px; margin-left: -13%;}
+  .theend__content{    left: 40%;}
+}
+
+/* ------------------------------------((((768px))))------------------------------------ */
+@media (min-width: 768px) {
+  /* styles here */
+}
+
+/* ------------------------------------((((1024px))))------------------------------------ */
+@media (min-width: 1024px) {
+  /* styles here */
+}
+
+/* ------------------------------------((((1280px))))------------------------------------ */
+@media (min-width: 1280px) {
+  /* styles here */
+}
+
+/* ------------------------------------((((1440px))))------------------------------------ */
+@media (min-width: 1440px) {
+  /* styles here */
+}
+
+/* ------------------------------------((((1920px))))------------------------------------ */
+@media (min-width: 1920px) {
+  /* styles here */
+}
