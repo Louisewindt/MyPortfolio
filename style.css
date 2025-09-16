@@ -1882,5 +1882,121 @@ transform: rotate(25deg);
 
 /* ------------------------------------((((1920px))))------------------------------------ */
 @media (min-width: 1920px) {
-  /* styles here */
+  .cv-resume{margin-top: 23%;}
+  .cv-resume__portrait{top: 3%;}
+  .cv-education{margin-top: 7%; margin-left: 31%;}
+  .cv-education__title{font-size: 36px;}
+  .cv-education p{ font-size: 22px;}
+  .cv-education a{font-size: 22px;}
+  .about{margin-top: -60%;}
+  .cv-paper__airpods{width: 50%; margin-top: 0%; left: -7%;}
+  .education{margin-top: 21%;}
+  .education__image{margin-left: -33%; width: 755px;}
+  .education__what{font-size: 32px;}
+  .education__when{font-size: 22px;}
+  .education__where{font-size: 26px;}
+  .education__pentext{top: -7%; font-size: 32px;}
+  .clutter{width: 50%; left: 58%; top: -7%;}
+  .workexp{top: -7%;} 
+  .workexp__pen{ right: -65%; bottom: -9%;}
+  .workexp__bg{width: 178%;}
+  .workexp2__bg{width: 178%;}
+  .workexp__titlewrap{margin-left: 9%;}
+  .workexp__text{margin-left: 14%;}
+  .workexp2__text{margin-left: -3%;}
+  .workexp__desc{font-size: 24px; width: 300px;}
+  .workexp__highlight{width: 81%;}
+  .workexp__company{font-size: 32px; width: 300px;}
+  .workexp__stamp{top: 17%; right: 25%;}
+  .workexp__brand{ right: 23%;}
+  .workexp__photo{width: 47%; bottom: 7%; left: 30%;}
+  .workexp2__titlewrap{margin-left: 2%;}
+  .workexp2__highlight{width: 80%;}
+  .workexp2__desc{font-size: 24px; width: 400px;}
+  .workexp2__sticker{left: 47%;}
+  .workexp2{top: -8%; left: 22%;}
+  .workexp2__postSection{top: 26%; left: 20%;}
+  .workexp2__postText{font-size: 32px; width: 200px;}
+  .workexp2__link{bottom: -70%; left: -477px; width: 112%;}
+  
+  .newspaper{width: 110%; top: -124%; left: -294%; transform: rotate(26deg);}
+
+  .branding{margin: 32rem auto 5rem;}
+  .paper-snip{width: 85%;}
+  .branding-intro{margin-left: 56%;}
+  .branding__sticker{right: -43%;}
+  .paper-snip__text{font-size: 32px;}
+  .branding__image{margin-left: 0%; width: 120%; margin-top: -45%;}
+  .branding__brandlogo{left: 100%; width: 500px;}
+  .branding__stickynotes{width: 120%; left: 37%; top: -500px;}
+  .branding-focus{left: -38%;  transform: rotate(16deg); top: 130px;}
+
+  .signs{margin: -20% auto -24rem;}
+  .signs-intro{ left: -46%;}
+  .signs__image{width: 150%; margin-left: 12%; margin-top: -68%; }
+  .signs-bus{margin-left: 64%; margin-top: -15%; z-index: 2;}
+  .signs__stack{width: 120%; margin-left: -47%; margin-top: -73%;}
+  .signs-parking{top: -900px;transform: rotate(7deg); margin-left: 54%;}
+  .signs__parkingimage{width: 120%; top: -381px; left: -23%; position: relative;}
+
+  .socialMedia__logo{width: 110%;}
+  .socialMedia__phone{width: 160%; left: 62%; top: -263px;}
+  .socialMedia-intro{width: 160%; left: -123%;}
+  .socialMedia__link{width: 80%; left: -85%;}
+  .socialMedia-bubble{width: 110%;}
+  .socialMedia-bubble__text{font-size: 32px;}
+  .socialMedia-about{width: 160%; left: -120%; top: -900px;}
+  .socialMedia-about2{width: 160%; top: -1050px;transform: rotate(-8.011deg);}
+  .socialMedia-about3{width: 160%; left: 100%; top: -900px;}
+  .socialMedia-about4{width: 160%; left: 35%;}
+  .socialMedia__instagramimage{width: 160%; margin-left: -141%; margin-top: -192%;}
+
+  .UIUX-intro{width: 50%; top: 75px; left: 24%;}
+  .ds .ds-snip.paper-snip {margin-left: 56%;}
+  .ds-sticky{width: 630%; margin-left: -494%;}
+  .ds__gif{width: 130%; justify-self: center;}
+  .gif__cta--image{width: 30%;}
+  .video__cta--image{width: 10%;}
+  .ds-idea__row{left: -32%;top: 165px; position: relative;}
+  .phone{left: 31%; top: 0%;margin-top: -33%; transform: rotate(2deg);}
+  .phone__gif{top: 53px;}
+  .ds-idea__sticky{width: 43%;}
+  .UIUX-end{left: 30%;top: -590px;}
+  .morestuff{margin-top: -16%;}
+  .morestuff-esport{width: 45%; top: 0%; left: -29%;}
+  .morestuff-esport__logo{width: 30%;margin-left: 5%;}
+  .morestuff-esport__text{font-size: 26px;}
+  .morestuff-oasis{width: 45%; left: 28%; margin-top: -48%;}
+  .morestuff-oasis__logo{ width: 21%; left: 39%; top: -55px ; position: relative;}
+  .morestuff-oasis__text{font-size: 26px;}
+  .morestuff-gravityTower{width: 45%; top: 0%; left: -29%;}
+  .morestuff-gravityTower__logo{width: 30%;margin-left: 5%;}
+  .morestuff-gravityTower__text{font-size: 26px;}
+  .morestuff-spacespinner{width: 45%; left: 28%; margin-top: -40%;}
+  .morestuff-spacespinner__logo{ width: 30%; left: 30%; top: -55px ; position: relative;}
+  .morestuff-spacespinner__text{font-size: 26px;}
+  .nt{margin-bottom: -%;}
+  .nt__hero{width: 90%;}
+  .nt__polaroid{width: 100%; margin-left: -42%;}
+  .nt-snip{width: 200%;}
+  .Instagram__phone{width: 50%; left: 25%; top: 0%;}
+  .intro__pencil {
+        width: 800px;
+        left: -58%;
+    }
+
+  .theend__title{font-size: 32px;}
+  .contact{font-size: 28px;}
+
+  .theend{margin-top: 0%;}
+
+
+ 
+    .cv-paper__bg {
+  display: block;
+  width: 100%;
+  height: auto; 
+  max-height: 9000px;
+  margin: -10% auto;
+}
 }
