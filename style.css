@@ -1532,6 +1532,8 @@ transform: rotate(25deg);
   /* About: keep photo a touch smaller */
   .about__photo { width: min(84%, 300px); }
 
+  .newspaper{top: -36%;}
+
   /* Programs: pull stickers closer */
   .programs { margin-top: -80%; }
   .programs__sticker { right: -4%; bottom: -32%; }
